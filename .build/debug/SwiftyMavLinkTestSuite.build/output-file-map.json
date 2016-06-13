@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.build/master.swiftdeps"
+  },
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Tests/SwiftyMavLink/MavlinkTests.swift": {
+    "dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.build/MavlinkTests.d",
+    "object": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.build/MavlinkTests.swift.o",
+    "swiftmodule": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.build/MavlinkTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.build/MavlinkTests.swiftdeps"
+  }
+}

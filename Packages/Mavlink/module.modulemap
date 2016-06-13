@@ -1,0 +1,4 @@
+module Mavlink [system] {
+    header "common/mavlink.h"
+    export *
+}

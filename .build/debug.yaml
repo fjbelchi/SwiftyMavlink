@@ -1,0 +1,47 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["<SwiftyMavLink.module>","<SwiftyMavLinkTestSuite.module>","<SwiftyMavLinkTests.test>"]
+  "main": ["<SwiftyMavLink.module>"]
+default: "main"
+commands: 
+  "<SwiftyMavLink.module>":
+    tool: swift-compiler
+    executable: "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-31-a.xctoolchain/usr/bin/swiftc"
+    module-name: "SwiftyMavLink"
+    module-output-path: "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.swiftmodule"
+    inputs: ["<Mavlink.module>"]
+    outputs: ["<SwiftyMavLink.module>","/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink.swift.o"]
+    import-paths: ["/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug"]
+    temps-path: "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build"
+    objects: ["/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-Xcc","-fmodule-map-file=/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Mavlink-0.1.0/module.modulemap","-module-cache-path","/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/ModuleCache"]
+    sources: ["/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/Mavlink.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<SwiftyMavLinkTestSuite.module>":
+    tool: swift-compiler
+    executable: "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-31-a.xctoolchain/usr/bin/swiftc"
+    module-name: "SwiftyMavLinkTestSuite"
+    module-output-path: "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.swiftmodule"
+    inputs: ["<Mavlink.module>","<SwiftyMavLink.module>"]
+    outputs: ["<SwiftyMavLinkTestSuite.module>","/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.build/MavlinkTests.swift.o"]
+    import-paths: ["/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug"]
+    temps-path: "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.build"
+    objects: ["/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.build/MavlinkTests.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-Xcc","-fmodule-map-file=/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Mavlink-0.1.0/module.modulemap","-module-cache-path","/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/ModuleCache"]
+    sources: ["/Users/fran_dev/GitHub/SwiftyMavLink/Tests/SwiftyMavLink/MavlinkTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<SwiftyMavLinkTests.test>":
+    tool: shell
+    description: "Linking .build/debug/SwiftyMavLinkTests.xctest/Contents/MacOS/SwiftyMavLinkTests"
+    inputs: ["/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.build/MavlinkTests.swift.o","/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink.swift.o"]
+    outputs: ["<SwiftyMavLinkTests.test>","/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTests.xctest/Contents/MacOS/SwiftyMavLinkTests"]
+    args: ["/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-31-a.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-g","-L/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug","-o","/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTests.xctest/Contents/MacOS/SwiftyMavLinkTests","-module-name","SwiftyMavLinkTests","-Xlinker","-bundle","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLinkTestSuite.build/MavlinkTests.swift.o","/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink.swift.o"]
+
