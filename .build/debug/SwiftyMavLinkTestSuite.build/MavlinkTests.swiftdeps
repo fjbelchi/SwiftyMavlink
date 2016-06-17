@@ -6,36 +6,38 @@ provides-nominal:
 provides-member:
 - ["C22SwiftyMavLinkTestSuite12MavlinkTests", ""]
 provides-dynamic-lookup:
-- "testExample"
+- "testHeartbeatDecode"
 depends-top-level:
-- !private "mavlink_attitude_t"
-- !private "mavlink_highres_imu_t"
-- "MavlinkTests"
-- !private "mavlink_vfr_hud_t"
-- !private "mavlink_msg_sys_status_decode"
+- "Mavlink"
 - !private "mavlink_msg_attitude_decode"
 - !private "mavlink_msg_highres_imu_decode"
-- "mavlink_message_t"
-- !private "mavlink_msg_heartbeat_decode"
-- !private "mavlink_msg_battery_status_decode"
-- "XCTestCase"
+- !private "UnsafeMutablePointer"
+- !private "UInt8"
 - !private "mavlink_msg_vfr_hud_decode"
-- !private "mavlink_sys_status_t"
-- !private "UnicodeScalarType"
 - !private "mavlink_msg_heartbeat_pack"
-- "String"
-- !private "BooleanLiteralType"
-- !private "XCTAssertTrue"
-- !private "mavlink_heartbeat_t"
-- !private "mavlink_battery_status_t"
+- !private "mavlink_sys_status_t"
 - !private "StringLiteralType"
+- !private "mavlink_attitude_t"
+- !private "mavlink_highres_imu_t"
+- "String"
+- !private "mavlink_heartbeat_t"
+- !private "mavlink_msg_battery_status_decode"
+- !private "mavlink_vfr_hud_t"
+- "mavlink_message_t"
 - !private "print"
+- !private "NSData"
+- !private "UnicodeScalarType"
 - !private "~="
-- "Mavlink"
+- !private "mavlink_msg_sys_status_decode"
+- !private "mavlink_msg_heartbeat_decode"
+- !private "mavlink_battery_status_t"
+- "XCTestCase"
+- !private "mavlink_msg_to_send_buffer"
+- "MavlinkTests"
 depends-member:
 - ["Ps9AnyObject", "Mavlink"]
-- !private ["Ps9AnyObject", "XCTAssertTrue"]
-- !private ["Ps9AnyObject", "decode"]
+- !private ["Ps9AnyObject", "NSData"]
+- !private ["Ps9AnyObject", "UnsafeMutablePointer"]
 - ["Ps9AnyObject", "descriptionForMavlinkMessage"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "mavlink"]
@@ -50,11 +52,12 @@ depends-member:
 - !private ["Ps9AnyObject", "mavlink_msg_heartbeat_pack"]
 - !private ["Ps9AnyObject", "mavlink_msg_highres_imu_decode"]
 - !private ["Ps9AnyObject", "mavlink_msg_sys_status_decode"]
+- !private ["Ps9AnyObject", "mavlink_msg_to_send_buffer"]
 - !private ["Ps9AnyObject", "mavlink_msg_vfr_hud_decode"]
 - !private ["Ps9AnyObject", "mavlink_sys_status_t"]
 - !private ["Ps9AnyObject", "mavlink_vfr_hud_t"]
 - !private ["Ps9AnyObject", "print"]
-- ["Ps9AnyObject", "testExample"]
+- ["Ps9AnyObject", "testHeartbeatDecode"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
@@ -62,8 +65,9 @@ depends-member:
 - !private ["Ps7Boolean", "_getBuiltinLogicValue"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - ["Ps7CVarArg", "Mavlink"]
+- !private ["Ps7CVarArg", "NSData"]
 - !private ["Ps7CVarArg", "Stride"]
-- !private ["Ps7CVarArg", "XCTAssertTrue"]
+- !private ["Ps7CVarArg", "UnsafeMutablePointer"]
 - ["Ps7CVarArg", "descriptionForMavlinkMessage"]
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "mavlink"]
@@ -78,11 +82,12 @@ depends-member:
 - !private ["Ps7CVarArg", "mavlink_msg_heartbeat_pack"]
 - !private ["Ps7CVarArg", "mavlink_msg_highres_imu_decode"]
 - !private ["Ps7CVarArg", "mavlink_msg_sys_status_decode"]
+- !private ["Ps7CVarArg", "mavlink_msg_to_send_buffer"]
 - !private ["Ps7CVarArg", "mavlink_msg_vfr_hud_decode"]
 - !private ["Ps7CVarArg", "mavlink_sys_status_t"]
 - !private ["Ps7CVarArg", "mavlink_vfr_hud_t"]
 - !private ["Ps7CVarArg", "print"]
-- ["Ps7CVarArg", "testExample"]
+- ["Ps7CVarArg", "testHeartbeatDecode"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
 - !private ["Vs11ClosedRange", "deinit"]
@@ -91,7 +96,8 @@ depends-member:
 - !private ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "deinit"]
 - ["Ps28CustomDebugStringConvertible", "Mavlink"]
-- !private ["Ps28CustomDebugStringConvertible", "XCTAssertTrue"]
+- !private ["Ps28CustomDebugStringConvertible", "NSData"]
+- !private ["Ps28CustomDebugStringConvertible", "UnsafeMutablePointer"]
 - ["Ps28CustomDebugStringConvertible", "descriptionForMavlinkMessage"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "mavlink"]
@@ -106,11 +112,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "mavlink_msg_heartbeat_pack"]
 - !private ["Ps28CustomDebugStringConvertible", "mavlink_msg_highres_imu_decode"]
 - !private ["Ps28CustomDebugStringConvertible", "mavlink_msg_sys_status_decode"]
+- !private ["Ps28CustomDebugStringConvertible", "mavlink_msg_to_send_buffer"]
 - !private ["Ps28CustomDebugStringConvertible", "mavlink_msg_vfr_hud_decode"]
 - !private ["Ps28CustomDebugStringConvertible", "mavlink_sys_status_t"]
 - !private ["Ps28CustomDebugStringConvertible", "mavlink_vfr_hud_t"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
-- ["Ps28CustomDebugStringConvertible", "testExample"]
+- ["Ps28CustomDebugStringConvertible", "testHeartbeatDecode"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -119,8 +126,9 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
 - ["Ps23CustomStringConvertible", "Mavlink"]
+- !private ["Ps23CustomStringConvertible", "NSData"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
-- !private ["Ps23CustomStringConvertible", "XCTAssertTrue"]
+- !private ["Ps23CustomStringConvertible", "UnsafeMutablePointer"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "descriptionForMavlinkMessage"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -136,16 +144,18 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "mavlink_msg_heartbeat_pack"]
 - !private ["Ps23CustomStringConvertible", "mavlink_msg_highres_imu_decode"]
 - !private ["Ps23CustomStringConvertible", "mavlink_msg_sys_status_decode"]
+- !private ["Ps23CustomStringConvertible", "mavlink_msg_to_send_buffer"]
 - !private ["Ps23CustomStringConvertible", "mavlink_msg_vfr_hud_decode"]
 - !private ["Ps23CustomStringConvertible", "mavlink_sys_status_t"]
 - !private ["Ps23CustomStringConvertible", "mavlink_vfr_hud_t"]
 - !private ["Ps23CustomStringConvertible", "print"]
-- ["Ps23CustomStringConvertible", "testExample"]
+- ["Ps23CustomStringConvertible", "testHeartbeatDecode"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
 - ["Ps9Equatable", "Mavlink"]
+- !private ["Ps9Equatable", "NSData"]
 - !private ["Ps9Equatable", "Stride"]
-- !private ["Ps9Equatable", "XCTAssertTrue"]
+- !private ["Ps9Equatable", "UnsafeMutablePointer"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "descriptionForMavlinkMessage"]
 - ["Ps9Equatable", "init"]
@@ -161,17 +171,19 @@ depends-member:
 - !private ["Ps9Equatable", "mavlink_msg_heartbeat_pack"]
 - !private ["Ps9Equatable", "mavlink_msg_highres_imu_decode"]
 - !private ["Ps9Equatable", "mavlink_msg_sys_status_decode"]
+- !private ["Ps9Equatable", "mavlink_msg_to_send_buffer"]
 - !private ["Ps9Equatable", "mavlink_msg_vfr_hud_decode"]
 - !private ["Ps9Equatable", "mavlink_sys_status_t"]
 - !private ["Ps9Equatable", "mavlink_vfr_hud_t"]
 - !private ["Ps9Equatable", "print"]
-- ["Ps9Equatable", "testExample"]
+- ["Ps9Equatable", "testHeartbeatDecode"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "deinit"]
 - ["Ps8Hashable", "Mavlink"]
+- !private ["Ps8Hashable", "NSData"]
 - !private ["Ps8Hashable", "Stride"]
-- !private ["Ps8Hashable", "XCTAssertTrue"]
+- !private ["Ps8Hashable", "UnsafeMutablePointer"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "descriptionForMavlinkMessage"]
 - ["Ps8Hashable", "init"]
@@ -187,11 +199,12 @@ depends-member:
 - !private ["Ps8Hashable", "mavlink_msg_heartbeat_pack"]
 - !private ["Ps8Hashable", "mavlink_msg_highres_imu_decode"]
 - !private ["Ps8Hashable", "mavlink_msg_sys_status_decode"]
+- !private ["Ps8Hashable", "mavlink_msg_to_send_buffer"]
 - !private ["Ps8Hashable", "mavlink_msg_vfr_hud_decode"]
 - !private ["Ps8Hashable", "mavlink_sys_status_t"]
 - !private ["Ps8Hashable", "mavlink_vfr_hud_t"]
 - !private ["Ps8Hashable", "print"]
-- ["Ps8Hashable", "testExample"]
+- ["Ps8Hashable", "testHeartbeatDecode"]
 - ["Ps8Hashable", ""]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
@@ -201,11 +214,12 @@ depends-member:
 - !private ["Ps7Integer", "Stride"]
 - !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps25IntegerLiteralConvertible", "Stride"]
-- !private ["C13SwiftyMavLink7Mavlink", "decode"]
 - ["C13SwiftyMavLink7Mavlink", "init"]
 - ["C22SwiftyMavLinkTestSuite12MavlinkTests", "Mavlink"]
+- !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "NSData"]
 - ["C22SwiftyMavLinkTestSuite12MavlinkTests", "String"]
-- !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "XCTAssertTrue"]
+- !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "UInt8"]
+- !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "UnsafeMutablePointer"]
 - ["C22SwiftyMavLinkTestSuite12MavlinkTests", "deinit"]
 - ["C22SwiftyMavLinkTestSuite12MavlinkTests", "descriptionForMavlinkMessage"]
 - ["C22SwiftyMavLinkTestSuite12MavlinkTests", "init"]
@@ -221,19 +235,22 @@ depends-member:
 - !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "mavlink_msg_heartbeat_pack"]
 - !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "mavlink_msg_highres_imu_decode"]
 - !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "mavlink_msg_sys_status_decode"]
+- !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "mavlink_msg_to_send_buffer"]
 - !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "mavlink_msg_vfr_hud_decode"]
 - !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "mavlink_sys_status_t"]
 - !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "mavlink_vfr_hud_t"]
 - !private ["C22SwiftyMavLinkTestSuite12MavlinkTests", "print"]
-- ["C22SwiftyMavLinkTestSuite12MavlinkTests", "testExample"]
-- !private ["OC13SwiftyMavLink7Mavlink7Message", "description"]
+- ["C22SwiftyMavLinkTestSuite12MavlinkTests", "testHeartbeatDecode"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["CSo6NSData", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Mavlink"]
+- !private ["CSo8NSObject", "NSData"]
 - ["CSo8NSObject", "String"]
-- !private ["CSo8NSObject", "XCTAssertTrue"]
+- !private ["CSo8NSObject", "UInt8"]
+- !private ["CSo8NSObject", "UnsafeMutablePointer"]
 - ["CSo8NSObject", "descriptionForMavlinkMessage"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "mavlink"]
@@ -248,13 +265,15 @@ depends-member:
 - !private ["CSo8NSObject", "mavlink_msg_heartbeat_pack"]
 - !private ["CSo8NSObject", "mavlink_msg_highres_imu_decode"]
 - !private ["CSo8NSObject", "mavlink_msg_sys_status_decode"]
+- !private ["CSo8NSObject", "mavlink_msg_to_send_buffer"]
 - !private ["CSo8NSObject", "mavlink_msg_vfr_hud_decode"]
 - !private ["CSo8NSObject", "mavlink_sys_status_t"]
 - !private ["CSo8NSObject", "mavlink_vfr_hud_t"]
 - !private ["CSo8NSObject", "print"]
-- ["CSo8NSObject", "testExample"]
+- ["CSo8NSObject", "testHeartbeatDecode"]
 - ["PSo16NSObjectProtocol", "Mavlink"]
-- !private ["PSo16NSObjectProtocol", "XCTAssertTrue"]
+- !private ["PSo16NSObjectProtocol", "NSData"]
+- !private ["PSo16NSObjectProtocol", "UnsafeMutablePointer"]
 - ["PSo16NSObjectProtocol", "descriptionForMavlinkMessage"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "mavlink"]
@@ -269,21 +288,24 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "mavlink_msg_heartbeat_pack"]
 - !private ["PSo16NSObjectProtocol", "mavlink_msg_highres_imu_decode"]
 - !private ["PSo16NSObjectProtocol", "mavlink_msg_sys_status_decode"]
+- !private ["PSo16NSObjectProtocol", "mavlink_msg_to_send_buffer"]
 - !private ["PSo16NSObjectProtocol", "mavlink_msg_vfr_hud_decode"]
 - !private ["PSo16NSObjectProtocol", "mavlink_sys_status_t"]
 - !private ["PSo16NSObjectProtocol", "mavlink_vfr_hud_t"]
 - !private ["PSo16NSObjectProtocol", "print"]
-- ["PSo16NSObjectProtocol", "testExample"]
+- ["PSo16NSObjectProtocol", "testHeartbeatDecode"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo19NSPasteboardReading", "init"]
 - !private ["PSo19NSPasteboardWriting", "init"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
+- !private ["Vs13OpaquePointer", "deinit"]
 - !private ["Ps12OutputStream", "init"]
 - !private ["Vs5Range", "deinit"]
-- !private ["Vs12StaticString", "deinit"]
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "init"]
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
@@ -295,10 +317,15 @@ depends-member:
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Sp", "deinit"]
+- !private ["Sp", "init"]
+- !private ["SP", "deinit"]
 - !private ["Ps15UnsignedInteger", "Stride"]
 - ["CSo6XCTest", "Mavlink"]
+- !private ["CSo6XCTest", "NSData"]
 - ["CSo6XCTest", "String"]
-- !private ["CSo6XCTest", "XCTAssertTrue"]
+- !private ["CSo6XCTest", "UInt8"]
+- !private ["CSo6XCTest", "UnsafeMutablePointer"]
 - ["CSo6XCTest", "descriptionForMavlinkMessage"]
 - ["CSo6XCTest", "init"]
 - ["CSo6XCTest", "mavlink"]
@@ -313,14 +340,17 @@ depends-member:
 - !private ["CSo6XCTest", "mavlink_msg_heartbeat_pack"]
 - !private ["CSo6XCTest", "mavlink_msg_highres_imu_decode"]
 - !private ["CSo6XCTest", "mavlink_msg_sys_status_decode"]
+- !private ["CSo6XCTest", "mavlink_msg_to_send_buffer"]
 - !private ["CSo6XCTest", "mavlink_msg_vfr_hud_decode"]
 - !private ["CSo6XCTest", "mavlink_sys_status_t"]
 - !private ["CSo6XCTest", "mavlink_vfr_hud_t"]
 - !private ["CSo6XCTest", "print"]
-- ["CSo6XCTest", "testExample"]
+- ["CSo6XCTest", "testHeartbeatDecode"]
 - ["CSo10XCTestCase", "Mavlink"]
+- !private ["CSo10XCTestCase", "NSData"]
 - ["CSo10XCTestCase", "String"]
-- !private ["CSo10XCTestCase", "XCTAssertTrue"]
+- !private ["CSo10XCTestCase", "UInt8"]
+- !private ["CSo10XCTestCase", "UnsafeMutablePointer"]
 - ["CSo10XCTestCase", "descriptionForMavlinkMessage"]
 - ["CSo10XCTestCase", "init"]
 - ["CSo10XCTestCase", "mavlink"]
@@ -335,11 +365,12 @@ depends-member:
 - !private ["CSo10XCTestCase", "mavlink_msg_heartbeat_pack"]
 - !private ["CSo10XCTestCase", "mavlink_msg_highres_imu_decode"]
 - !private ["CSo10XCTestCase", "mavlink_msg_sys_status_decode"]
+- !private ["CSo10XCTestCase", "mavlink_msg_to_send_buffer"]
 - !private ["CSo10XCTestCase", "mavlink_msg_vfr_hud_decode"]
 - !private ["CSo10XCTestCase", "mavlink_sys_status_t"]
 - !private ["CSo10XCTestCase", "mavlink_vfr_hud_t"]
 - !private ["CSo10XCTestCase", "print"]
-- ["CSo10XCTestCase", "testExample"]
+- ["CSo10XCTestCase", "testHeartbeatDecode"]
 - ["CSo10XCTestCase", ""]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -354,7 +385,9 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps8_Pointer", "init"]
 - !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "init"]
 - !private ["Ps14_StringElement", "Stride"]
 - !private ["VSC20__mavlink_attitude_t", "init"]
 - !private ["VSC20__mavlink_attitude_t", "pitch"]
@@ -405,10 +438,10 @@ depends-nominal:
 - !private "Ps25IntegerLiteralConvertible"
 - "C13SwiftyMavLink7Mavlink"
 - "C22SwiftyMavLinkTestSuite12MavlinkTests"
-- !private "OC13SwiftyMavLink7Mavlink7Message"
 - !private "Ps10MirrorPath"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
+- !private "CSo6NSData"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -416,9 +449,9 @@ depends-nominal:
 - !private "PSo19NSPasteboardWriting"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "Vs13OpaquePointer"
 - !private "Ps12OutputStream"
 - !private "Vs5Range"
-- !private "Vs12StaticString"
 - !private "Ps10Streamable"
 - !private "Ps10Strideable"
 - !private "SS"
@@ -431,6 +464,8 @@ depends-nominal:
 - !private "Vs5UInt8"
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Sp"
+- !private "SP"
 - !private "Ps15UnsignedInteger"
 - "CSo6XCTest"
 - "CSo10XCTestCase"
@@ -446,6 +481,7 @@ depends-nominal:
 - !private "Ps18_IntegerArithmetic"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
+- !private "Ps8_Pointer"
 - !private "Ps11_Strideable"
 - !private "Ps14_StringElement"
 - !private "VSC20__mavlink_attitude_t"
@@ -512,4 +548,4 @@ depends-external:
 - "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-31-a.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
 - "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-31-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-05-31-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "563d799fef82012ce851c05588fa9d05"
+interface-hash: "5b04c81e59413e80627c0d3bf985ae6c"

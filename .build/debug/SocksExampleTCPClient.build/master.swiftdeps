@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.30 clang-800.0.24)"
+options: "f85ebc0b6f8c1fa01c4cc1c49084e0d8"
+build_time: [519346647, 816296000]
+inputs:
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Socks-0.7.0/Sources/SocksExampleTCPClient/main.swift": [519346643, 0]

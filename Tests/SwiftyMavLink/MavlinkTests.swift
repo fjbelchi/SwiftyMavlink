@@ -6,13 +6,21 @@ import XCTest
 class MavlinkTests: XCTestCase {
   let mavlink = Mavlink()
 
-  func testExample(){
+  func testHeartbeatDecode(){
     var message = mavlink_message_t()
     mavlink_msg_heartbeat_pack(0,0,&message,0,1,2,3,4);
+    print("test0")
 
-    let mavMsg = Mavlink.decode(message: &message)
-    print(mavMsg?.description)
-    XCTAssertTrue(true)
+    var  buffer = UnsafeMutablePointer<UInt8>(nil)
+    mavlink_msg_to_send_buffer(buffer, &message)
+    print("test1")
+
+    let data = NSData(bytes: buffer, length: 9)
+    print("test2")
+    print("data: \(data)")
+    // let mavMsg = Mavlink.parse(data: &message)
+    // print(mavMsg?.description)
+    // XCTAssertTrue(true)
   }
 
   public func descriptionForMavlinkMessage(message: inout mavlink_message_t) -> String {

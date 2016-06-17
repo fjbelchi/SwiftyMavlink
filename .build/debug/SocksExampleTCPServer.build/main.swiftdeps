@@ -1,0 +1,189 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+- "SynchronousTCPServer"
+- "StringLiteralType"
+- "IntegerLiteralType"
+- "print"
+- "FloatLiteralType"
+depends-member:
+- ["Ps9AnyObject", "address"]
+- ["Ps9AnyObject", "close"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "receiveAll"]
+- ["Ps9AnyObject", "send"]
+- ["Ps9AnyObject", "startWithHandler"]
+- ["Sa", "Iterator"]
+- ["Sa", "_Element"]
+- ["Sa", "toString"]
+- ["Ps23ArrayLiteralConvertible", "Iterator"]
+- ["Ps23ArrayLiteralConvertible", "_Element"]
+- ["Ps23ArrayLiteralConvertible", "toString"]
+- ["Ps23BidirectionalCollection", "Iterator"]
+- ["Ps23BidirectionalCollection", "_Element"]
+- ["Ps23BidirectionalCollection", "toString"]
+- ["Ps22BidirectionalIndexable", "Iterator"]
+- ["Ps22BidirectionalIndexable", "_Element"]
+- ["Ps22BidirectionalIndexable", "toString"]
+- ["Sb", "deinit"]
+- ["Vs9Character", "deinit"]
+- ["Ps10Collection", "Iterator"]
+- ["Ps10Collection", "_Element"]
+- ["Ps10Collection", "toString"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "Iterator"]
+- ["Ps28CustomDebugStringConvertible", "_Element"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "toString"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "Iterator"]
+- ["Ps17CustomReflectable", "_Element"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "toString"]
+- ["Ps23CustomStringConvertible", "Iterator"]
+- ["Ps23CustomStringConvertible", "_Element"]
+- ["Ps23CustomStringConvertible", "close"]
+- ["Ps23CustomStringConvertible", "receiveAll"]
+- ["Ps23CustomStringConvertible", "send"]
+- ["Ps23CustomStringConvertible", "toString"]
+- ["Sd", "deinit"]
+- ["Ps9Equatable", "init"]
+- ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- ["Sf", "deinit"]
+- ["Ps8Hashable", "init"]
+- ["Ps9Indexable", "Iterator"]
+- ["Ps9Indexable", "_Element"]
+- ["Ps9Indexable", "toString"]
+- ["Ps13IndexableBase", "Iterator"]
+- ["Ps13IndexableBase", "_Element"]
+- ["Ps13IndexableBase", "toString"]
+- ["Vs16IndexingIterator", "Element"]
+- ["Si", "deinit"]
+- ["Vs5Int16", "deinit"]
+- ["Vs5Int32", "deinit"]
+- ["Vs5Int64", "deinit"]
+- ["Vs4Int8", "deinit"]
+- ["V9SocksCore15InternetAddress", "addressFamily"]
+- ["V9SocksCore15InternetAddress", "hostname"]
+- ["V9SocksCore15InternetAddress", "port"]
+- ["Ps16IteratorProtocol", "Element"]
+- ["Ps10MirrorPath", "init"]
+- ["Ps17MutableCollection", "Iterator"]
+- ["Ps17MutableCollection", "_Element"]
+- ["Ps17MutableCollection", "toString"]
+- ["Ps16MutableIndexable", "Iterator"]
+- ["Ps16MutableIndexable", "_Element"]
+- ["Ps16MutableIndexable", "toString"]
+- ["Ps12OutputStream", "init"]
+- ["Ps22RandomAccessCollection", "Iterator"]
+- ["Ps22RandomAccessCollection", "_Element"]
+- ["Ps22RandomAccessCollection", "toString"]
+- ["Ps21RandomAccessIndexable", "Iterator"]
+- ["Ps21RandomAccessIndexable", "_Element"]
+- ["Ps21RandomAccessIndexable", "toString"]
+- ["Ps26RangeReplaceableCollection", "Iterator"]
+- ["Ps26RangeReplaceableCollection", "_Element"]
+- ["Ps26RangeReplaceableCollection", "toString"]
+- ["Ps25RangeReplaceableIndexable", "Iterator"]
+- ["Ps25RangeReplaceableIndexable", "_Element"]
+- ["Ps25RangeReplaceableIndexable", "toString"]
+- ["Ps8Sequence", "Element"]
+- ["Ps8Sequence", "Iterator"]
+- ["Ps8Sequence", "_Element"]
+- ["Ps8Sequence", "toString"]
+- ["Ps10Streamable", "init"]
+- ["SS", "init"]
+- ["Ps30StringInterpolationConvertible", "init"]
+- ["Ps24StringLiteralConvertible", "init"]
+- ["C5Socks20SynchronousTCPServer", "address"]
+- ["C5Socks20SynchronousTCPServer", "init"]
+- ["C5Socks20SynchronousTCPServer", "startWithHandler"]
+- ["C5Socks9TCPClient", "close"]
+- ["C5Socks9TCPClient", "receiveAll"]
+- ["C5Socks9TCPClient", "send"]
+- ["Su", "deinit"]
+- ["Vs6UInt16", "deinit"]
+- ["Vs6UInt32", "deinit"]
+- ["Vs6UInt64", "deinit"]
+- ["Vs5UInt8", "deinit"]
+- ["Sc", "deinit"]
+- ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- ["Ps14_ArrayProtocol", "Iterator"]
+- ["Ps14_ArrayProtocol", "_Element"]
+- ["Ps14_ArrayProtocol", "toString"]
+- ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- ["Ps24_DestructorSafeContainer", "Iterator"]
+- ["Ps24_DestructorSafeContainer", "_Element"]
+- ["Ps24_DestructorSafeContainer", "toString"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23ArrayLiteralConvertible"
+- "Ps23BidirectionalCollection"
+- "Ps22BidirectionalIndexable"
+- "Sb"
+- "Vs9Character"
+- "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Sd"
+- "Ps9Equatable"
+- "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- "Sf"
+- "Ps8Hashable"
+- "Ps9Indexable"
+- "Ps13IndexableBase"
+- "Vs16IndexingIterator"
+- "Si"
+- "Vs5Int16"
+- "Vs5Int32"
+- "Vs5Int64"
+- "Vs4Int8"
+- "V9SocksCore15InternetAddress"
+- "Ps16IteratorProtocol"
+- "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- "Ps16MutableIndexable"
+- "Ps12OutputStream"
+- "Ps22RandomAccessCollection"
+- "Ps21RandomAccessIndexable"
+- "Ps26RangeReplaceableCollection"
+- "Ps25RangeReplaceableIndexable"
+- "Ps8Sequence"
+- "Ps10Streamable"
+- "SS"
+- "Ps30StringInterpolationConvertible"
+- "Ps24StringLiteralConvertible"
+- "C5Socks20SynchronousTCPServer"
+- "C5Socks9TCPClient"
+- "Su"
+- "Vs6UInt16"
+- "Vs6UInt32"
+- "Vs6UInt64"
+- "Vs5UInt8"
+- "Sc"
+- "Ps31UnicodeScalarLiteralConvertible"
+- "Ps14_ArrayProtocol"
+- "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- "Ps32_BuiltinStringLiteralConvertible"
+- "Ps37_BuiltinUTF16StringLiteralConvertible"
+- "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- "Ps24_DestructorSafeContainer"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Mavlink-0.1.0/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/Socks.swiftmodule"
+- "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SocksCore.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+interface-hash: "465a1f5826951e60714319635079e27b"

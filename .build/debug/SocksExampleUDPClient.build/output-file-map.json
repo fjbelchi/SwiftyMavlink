@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SocksExampleUDPClient.build/master.swiftdeps"
+  },
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Socks-0.7.0/Sources/SocksExampleUDPClient/main.swift": {
+    "dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SocksExampleUDPClient.build/main.d",
+    "object": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SocksExampleUDPClient.build/main.swift.o",
+    "swiftmodule": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SocksExampleUDPClient.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SocksExampleUDPClient.build/main.swiftdeps"
+  }
+}

@@ -1,0 +1,1236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFB346A51D141028009715BF /* Data+Mavlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3469B1D13F0C1009715BF /* Data+Mavlink.swift */; };
+		FFB346A61D14102D009715BF /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346A11D13F810009715BF /* Checksum.swift */; };
+		FFB346A71D141031009715BF /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346A31D13F870009715BF /* Package.swift */; };
+		FFB346A81D141038009715BF /* MavlinkParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3469F1D13F1F9009715BF /* MavlinkParserError.swift */; };
+		FFB346A91D141040009715BF /* MavlinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346971D13EEBC009715BF /* MavlinkParser.swift */; };
+		_LinkFileRef_SocksCore_via_Socks /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_SocksCore_via_SocksCoreExampleTCPClient /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_SocksCore_via_SocksCoreExampleTCPKeepAliveServer /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_SocksCore_via_SocksCoreExampleTCPServer /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_SocksCore_via_SocksExampleTCPClient /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_SocksCore_via_SocksExampleTCPServer /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_SocksCore_via_SocksExampleUDPClient /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_SocksCore_via_SocksExampleUDPServer /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_SocksCore_via_SwiftyMavLink /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_SocksCore_via_SwiftyMavLinkTestSuite /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_Socks_via_SocksCoreExampleTCPKeepAliveServer /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
+		_LinkFileRef_Socks_via_SocksExampleTCPClient /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
+		_LinkFileRef_Socks_via_SocksExampleTCPServer /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
+		_LinkFileRef_Socks_via_SocksExampleUDPClient /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
+		_LinkFileRef_Socks_via_SocksExampleUDPServer /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
+		_LinkFileRef_Socks_via_SwiftyMavLink /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
+		_LinkFileRef_Socks_via_SwiftyMavLinkTestSuite /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
+		_LinkFileRef_SwiftyMavLink_via_SwiftyMavLinkTestSuite /* SwiftyMavLink in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SwiftyMavLink" /* SwiftyMavLink */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/Socks/Socks.swift" /* Socks.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/Socks.swift" /* Socks.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/Socks/SynchronousTCPServer.swift" /* SynchronousTCPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/SynchronousTCPServer.swift" /* SynchronousTCPServer.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/Socks/SynchronousUDPServer.swift" /* SynchronousUDPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/SynchronousUDPServer.swift" /* SynchronousUDPServer.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/Socks/TCPClient.swift" /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/TCPClient.swift" /* TCPClient.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/Socks/UDPClient.swift" /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/UDPClient.swift" /* UDPClient.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Address+C.swift" /* Address+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Address+C.swift" /* Address+C.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Address.swift" /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Address.swift" /* Address.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Bytes.swift" /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Bytes.swift" /* Bytes.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Conversions.swift" /* Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Conversions.swift" /* Conversions.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Error.swift" /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Error.swift" /* Error.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/FDSet.swift" /* FDSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/FDSet.swift" /* FDSet.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/InternetSocket.swift" /* InternetSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/InternetSocket.swift" /* InternetSocket.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Pipe.swift" /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Pipe.swift" /* Pipe.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Select.swift" /* Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Select.swift" /* Select.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Socket.swift" /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Socket.swift" /* Socket.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/SocketOptions.swift" /* SocketOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/SocketOptions.swift" /* SocketOptions.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/TCPSocket.swift" /* TCPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/TCPSocket.swift" /* TCPSocket.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Types.swift" /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Types.swift" /* Types.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/UDPSocket.swift" /* UDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/UDPSocket.swift" /* UDPSocket.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPClient/main.swift" /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPClient/main.swift" /* main.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPKeepAliveServer/main.swift" /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPKeepAliveServer/main.swift" /* main.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPServer/main.swift" /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPServer/main.swift" /* main.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleTCPClient/main.swift" /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleTCPClient/main.swift" /* main.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleTCPServer/main.swift" /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleTCPServer/main.swift" /* main.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleUDPClient/main.swift" /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleUDPClient/main.swift" /* main.swift */; };
+		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleUDPServer/main.swift" /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleUDPServer/main.swift" /* main.swift */; };
+		"__src_cc_ref_Sources/SwiftyMavLink/Mavlink+Types.swift" /* Mavlink+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Sources/SwiftyMavLink/Mavlink+Types.swift" /* Mavlink+Types.swift */; };
+		__src_cc_ref_Sources/SwiftyMavLink/Mavlink.swift /* Mavlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftyMavLink/Mavlink.swift /* Mavlink.swift */; };
+		__src_cc_ref_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift */; };
+		__src_cc_ref_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift */; };
+		"__src_cc_ref_Sources/SwiftyMavLink/UInt32+Extension.swift" /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Sources/SwiftyMavLink/UInt32+Extension.swift" /* UInt32+Extension.swift */; };
+		__src_cc_ref_Sources/SwiftyMavLink/main.swift /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftyMavLink/main.swift /* main.swift */; };
+		__src_cc_ref_Tests/SwiftyMavLink/MavlinkTests.swift /* MavlinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/SwiftyMavLink/MavlinkTests.swift /* MavlinkTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF739D331D121C9800C87410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SocksCore";
+			remoteInfo = SocksCore;
+		};
+		FF739D341D121C9800C87410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Socks";
+			remoteInfo = Socks;
+		};
+		FF739D351D121C9800C87410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SwiftyMavLink";
+			remoteInfo = SwiftyMavLink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFB346971D13EEBC009715BF /* MavlinkParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MavlinkParser.swift; path = MavlinkParser/MavlinkParser.swift; sourceTree = "<group>"; };
+		FFB3469B1D13F0C1009715BF /* Data+Mavlink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+Mavlink.swift"; path = "Extensions/Data+Mavlink.swift"; sourceTree = "<group>"; };
+		FFB3469F1D13F1F9009715BF /* MavlinkParserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MavlinkParserError.swift; path = MavlinkParser/MavlinkParserError.swift; sourceTree = "<group>"; };
+		FFB346A11D13F810009715BF /* Checksum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = MavlinkParser/Checksum.swift; sourceTree = "<group>"; };
+		FFB346A31D13F870009715BF /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = MavlinkParser/Package.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/Socks.swift" /* Socks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socks.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/SynchronousTCPServer.swift" /* SynchronousTCPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousTCPServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/SynchronousUDPServer.swift" /* SynchronousUDPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousUDPServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/TCPClient.swift" /* TCPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPClient.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/UDPClient.swift" /* UDPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPClient.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Address+C.swift" /* Address+C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+C.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Address.swift" /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Bytes.swift" /* Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bytes.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Conversions.swift" /* Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversions.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Error.swift" /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/FDSet.swift" /* FDSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDSet.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/InternetSocket.swift" /* InternetSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetSocket.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Pipe.swift" /* Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Select.swift" /* Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Select.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Socket.swift" /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/SocketOptions.swift" /* SocketOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketOptions.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/TCPSocket.swift" /* TCPSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPSocket.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Types.swift" /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/UDPSocket.swift" /* UDPSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPSocket.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPClient/main.swift" /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPKeepAliveServer/main.swift" /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPServer/main.swift" /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleTCPClient/main.swift" /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleTCPServer/main.swift" /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleUDPClient/main.swift" /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleUDPServer/main.swift" /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		__PBXFileRef_SocksCore_Info.plist /* SocksCore_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SocksCore_Info.plist; path = SwiftyMavLink.xcodeproj/SocksCore_Info.plist; sourceTree = SOURCE_ROOT; };
+		__PBXFileRef_Socks_Info.plist /* Socks_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Socks_Info.plist; path = SwiftyMavLink.xcodeproj/Socks_Info.plist; sourceTree = SOURCE_ROOT; };
+		"__PBXFileRef_Sources/SwiftyMavLink/Mavlink+Types.swift" /* Mavlink+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mavlink+Types.swift"; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/SwiftyMavLink/Mavlink.swift /* Mavlink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mavlink.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Heartbeat.swift; path = Messages/Heartbeat.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Messages/Message.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Sources/SwiftyMavLink/UInt32+Extension.swift" /* UInt32+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt32+Extension.swift"; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/SwiftyMavLink/main.swift /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		__PBXFileRef_SwiftyMavLink.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = SwiftyMavLink.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_SwiftyMavLinkTestSuite_Info.plist /* SwiftyMavLinkTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SwiftyMavLinkTestSuite_Info.plist; path = SwiftyMavLink.xcodeproj/SwiftyMavLinkTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
+		__PBXFileRef_Tests/SwiftyMavLink/MavlinkTests.swift /* MavlinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MavlinkTests.swift; sourceTree = "<group>"; };
+		"_____Product_Socks" /* Socks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Socks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SocksCore" /* SocksCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SocksCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SocksCoreExampleTCPClient" /* SocksCoreExampleTCPClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SocksCoreExampleTCPClient; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SocksCoreExampleTCPKeepAliveServer" /* SocksCoreExampleTCPKeepAliveServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SocksCoreExampleTCPKeepAliveServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SocksCoreExampleTCPServer" /* SocksCoreExampleTCPServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SocksCoreExampleTCPServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SocksExampleTCPClient" /* SocksExampleTCPClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SocksExampleTCPClient; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SocksExampleTCPServer" /* SocksExampleTCPServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SocksExampleTCPServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SocksExampleUDPClient" /* SocksExampleUDPClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SocksExampleUDPClient; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SocksExampleUDPServer" /* SocksExampleUDPServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SocksExampleUDPServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SwiftyMavLink" /* SwiftyMavLink */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SwiftyMavLink; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SwiftyMavLinkTestSuite" /* SwiftyMavLinkTestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftyMavLinkTestSuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		"___LinkPhase_Socks" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_SocksCore_via_Socks /* SocksCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SocksCore" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SocksCoreExampleTCPClient" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_SocksCore_via_SocksCoreExampleTCPClient /* SocksCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SocksCoreExampleTCPKeepAliveServer" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Socks_via_SocksCoreExampleTCPKeepAliveServer /* Socks.framework in Frameworks */,
+				_LinkFileRef_SocksCore_via_SocksCoreExampleTCPKeepAliveServer /* SocksCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SocksCoreExampleTCPServer" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_SocksCore_via_SocksCoreExampleTCPServer /* SocksCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SocksExampleTCPClient" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Socks_via_SocksExampleTCPClient /* Socks.framework in Frameworks */,
+				_LinkFileRef_SocksCore_via_SocksExampleTCPClient /* SocksCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SocksExampleTCPServer" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Socks_via_SocksExampleTCPServer /* Socks.framework in Frameworks */,
+				_LinkFileRef_SocksCore_via_SocksExampleTCPServer /* SocksCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SocksExampleUDPClient" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Socks_via_SocksExampleUDPClient /* Socks.framework in Frameworks */,
+				_LinkFileRef_SocksCore_via_SocksExampleUDPClient /* SocksCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SocksExampleUDPServer" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Socks_via_SocksExampleUDPServer /* Socks.framework in Frameworks */,
+				_LinkFileRef_SocksCore_via_SocksExampleUDPServer /* SocksCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SwiftyMavLink" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Socks_via_SwiftyMavLink /* Socks.framework in Frameworks */,
+				_LinkFileRef_SocksCore_via_SwiftyMavLink /* SocksCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SwiftyMavLinkTestSuite" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Socks_via_SwiftyMavLinkTestSuite /* Socks.framework in Frameworks */,
+				_LinkFileRef_SocksCore_via_SwiftyMavLinkTestSuite /* SocksCore.framework in Frameworks */,
+				_LinkFileRef_SwiftyMavLink_via_SwiftyMavLinkTestSuite /* SwiftyMavLink in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		Dependencies_ /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_Socks" /* Socks */,
+				"_______Group_SocksCore" /* SocksCore */,
+				"_______Group_SocksCoreExampleTCPClient" /* SocksCoreExampleTCPClient */,
+				"_______Group_SocksCoreExampleTCPKeepAliveServer" /* SocksCoreExampleTCPKeepAliveServer */,
+				"_______Group_SocksCoreExampleTCPServer" /* SocksCoreExampleTCPServer */,
+				"_______Group_SocksExampleTCPClient" /* SocksExampleTCPClient */,
+				"_______Group_SocksExampleTCPServer" /* SocksExampleTCPServer */,
+				"_______Group_SocksExampleUDPClient" /* SocksExampleUDPClient */,
+				"_______Group_SocksExampleUDPServer" /* SocksExampleUDPServer */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		FFB346961D13EE93009715BF /* MavlinkParser */ = {
+			isa = PBXGroup;
+			children = (
+				FFB346A11D13F810009715BF /* Checksum.swift */,
+				FFB346A31D13F870009715BF /* Package.swift */,
+				FFB3469F1D13F1F9009715BF /* MavlinkParserError.swift */,
+				FFB346971D13EEBC009715BF /* MavlinkParser.swift */,
+			);
+			name = MavlinkParser;
+			sourceTree = "<group>";
+		};
+		FFB346991D13EF55009715BF /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift */,
+				__PBXFileRef_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		FFB3469A1D13F09C009715BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFB3469B1D13F0C1009715BF /* Data+Mavlink.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		TestProducts_ /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_____Product_SwiftyMavLinkTestSuite" /* SwiftyMavLinkTestSuite.xctest */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				Dependencies_ /* Dependencies */,
+				"_______Tests_" /* Tests */,
+				"____Products_" /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"____Products_" /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				TestProducts_ /* Tests */,
+				"_____Product_Socks" /* Socks.framework */,
+				"_____Product_SocksCore" /* SocksCore.framework */,
+				"_____Product_SocksCoreExampleTCPClient" /* SocksCoreExampleTCPClient */,
+				"_____Product_SocksCoreExampleTCPKeepAliveServer" /* SocksCoreExampleTCPKeepAliveServer */,
+				"_____Product_SocksCoreExampleTCPServer" /* SocksCoreExampleTCPServer */,
+				"_____Product_SocksExampleTCPClient" /* SocksExampleTCPClient */,
+				"_____Product_SocksExampleTCPServer" /* SocksExampleTCPServer */,
+				"_____Product_SocksExampleUDPClient" /* SocksExampleUDPClient */,
+				"_____Product_SocksExampleUDPServer" /* SocksExampleUDPServer */,
+				"_____Product_SwiftyMavLink" /* SwiftyMavLink */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_SwiftyMavLink.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_SwiftyMavLink" /* SwiftyMavLink */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_Socks" /* Socks */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/Socks.swift" /* Socks.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/SynchronousTCPServer.swift" /* SynchronousTCPServer.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/SynchronousUDPServer.swift" /* SynchronousUDPServer.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/TCPClient.swift" /* TCPClient.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/UDPClient.swift" /* UDPClient.swift */,
+				__PBXFileRef_Socks_Info.plist /* Socks_Info.plist */,
+			);
+			name = Socks;
+			path = "Packages/Socks-0.7.0/Sources/Socks";
+			sourceTree = "<group>";
+		};
+		"_______Group_SocksCore" /* SocksCore */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Address+C.swift" /* Address+C.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Address.swift" /* Address.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Bytes.swift" /* Bytes.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Conversions.swift" /* Conversions.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Error.swift" /* Error.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/FDSet.swift" /* FDSet.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/InternetSocket.swift" /* InternetSocket.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Pipe.swift" /* Pipe.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Select.swift" /* Select.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Socket.swift" /* Socket.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/SocketOptions.swift" /* SocketOptions.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/TCPSocket.swift" /* TCPSocket.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/Types.swift" /* Types.swift */,
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCore/UDPSocket.swift" /* UDPSocket.swift */,
+				__PBXFileRef_SocksCore_Info.plist /* SocksCore_Info.plist */,
+			);
+			name = SocksCore;
+			path = "Packages/Socks-0.7.0/Sources/SocksCore";
+			sourceTree = "<group>";
+		};
+		"_______Group_SocksCoreExampleTCPClient" /* SocksCoreExampleTCPClient */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPClient/main.swift" /* main.swift */,
+			);
+			name = SocksCoreExampleTCPClient;
+			path = "Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPClient";
+			sourceTree = "<group>";
+		};
+		"_______Group_SocksCoreExampleTCPKeepAliveServer" /* SocksCoreExampleTCPKeepAliveServer */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPKeepAliveServer/main.swift" /* main.swift */,
+			);
+			name = SocksCoreExampleTCPKeepAliveServer;
+			path = "Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPKeepAliveServer";
+			sourceTree = "<group>";
+		};
+		"_______Group_SocksCoreExampleTCPServer" /* SocksCoreExampleTCPServer */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPServer/main.swift" /* main.swift */,
+			);
+			name = SocksCoreExampleTCPServer;
+			path = "Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPServer";
+			sourceTree = "<group>";
+		};
+		"_______Group_SocksExampleTCPClient" /* SocksExampleTCPClient */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleTCPClient/main.swift" /* main.swift */,
+			);
+			name = SocksExampleTCPClient;
+			path = "Packages/Socks-0.7.0/Sources/SocksExampleTCPClient";
+			sourceTree = "<group>";
+		};
+		"_______Group_SocksExampleTCPServer" /* SocksExampleTCPServer */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleTCPServer/main.swift" /* main.swift */,
+			);
+			name = SocksExampleTCPServer;
+			path = "Packages/Socks-0.7.0/Sources/SocksExampleTCPServer";
+			sourceTree = "<group>";
+		};
+		"_______Group_SocksExampleUDPClient" /* SocksExampleUDPClient */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleUDPClient/main.swift" /* main.swift */,
+			);
+			name = SocksExampleUDPClient;
+			path = "Packages/Socks-0.7.0/Sources/SocksExampleUDPClient";
+			sourceTree = "<group>";
+		};
+		"_______Group_SocksExampleUDPServer" /* SocksExampleUDPServer */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleUDPServer/main.swift" /* main.swift */,
+			);
+			name = SocksExampleUDPServer;
+			path = "Packages/Socks-0.7.0/Sources/SocksExampleUDPServer";
+			sourceTree = "<group>";
+		};
+		"_______Group_SwiftyMavLink" /* SwiftyMavLink */ = {
+			isa = PBXGroup;
+			children = (
+				FFB3469A1D13F09C009715BF /* Extensions */,
+				FFB346991D13EF55009715BF /* Messages */,
+				FFB346961D13EE93009715BF /* MavlinkParser */,
+				__PBXFileRef_Sources/SwiftyMavLink/main.swift /* main.swift */,
+				"__PBXFileRef_Sources/SwiftyMavLink/Mavlink+Types.swift" /* Mavlink+Types.swift */,
+				__PBXFileRef_Sources/SwiftyMavLink/Mavlink.swift /* Mavlink.swift */,
+				"__PBXFileRef_Sources/SwiftyMavLink/UInt32+Extension.swift" /* UInt32+Extension.swift */,
+			);
+			name = SwiftyMavLink;
+			path = Sources/SwiftyMavLink;
+			sourceTree = "<group>";
+		};
+		"_______Group_SwiftyMavLinkTestSuite" /* SwiftyMavLinkTestSuite */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Tests/SwiftyMavLink/MavlinkTests.swift /* MavlinkTests.swift */,
+				__PBXFileRef_SwiftyMavLinkTestSuite_Info.plist /* SwiftyMavLinkTestSuite_Info.plist */,
+			);
+			name = SwiftyMavLinkTestSuite;
+			path = Tests/SwiftyMavLink;
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_SwiftyMavLinkTestSuite" /* SwiftyMavLinkTestSuite */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"______Target_Socks" /* Socks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Socks" /* Build configuration list for PBXNativeTarget "Socks" */;
+			buildPhases = (
+				CompilePhase_Socks /* Sources */,
+				"___LinkPhase_Socks" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SocksCore /* PBXTargetDependency */,
+			);
+			name = Socks;
+			productName = Socks;
+			productReference = "_____Product_Socks" /* Socks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SocksCore" /* SocksCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SocksCore" /* Build configuration list for PBXNativeTarget "SocksCore" */;
+			buildPhases = (
+				CompilePhase_SocksCore /* Sources */,
+				"___LinkPhase_SocksCore" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocksCore;
+			productName = SocksCore;
+			productReference = "_____Product_SocksCore" /* SocksCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SocksCoreExampleTCPClient" /* SocksCoreExampleTCPClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SocksCoreExampleTCPClient" /* Build configuration list for PBXNativeTarget "SocksCoreExampleTCPClient" */;
+			buildPhases = (
+				CompilePhase_SocksCoreExampleTCPClient /* Sources */,
+				"___LinkPhase_SocksCoreExampleTCPClient" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SocksCore /* PBXTargetDependency */,
+			);
+			name = SocksCoreExampleTCPClient;
+			productName = SocksCoreExampleTCPClient;
+			productReference = "_____Product_SocksCoreExampleTCPClient" /* SocksCoreExampleTCPClient */;
+			productType = "com.apple.product-type.tool";
+		};
+		"______Target_SocksCoreExampleTCPKeepAliveServer" /* SocksCoreExampleTCPKeepAliveServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SocksCoreExampleTCPKeepAliveServer" /* Build configuration list for PBXNativeTarget "SocksCoreExampleTCPKeepAliveServer" */;
+			buildPhases = (
+				CompilePhase_SocksCoreExampleTCPKeepAliveServer /* Sources */,
+				"___LinkPhase_SocksCoreExampleTCPKeepAliveServer" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socks /* PBXTargetDependency */,
+			);
+			name = SocksCoreExampleTCPKeepAliveServer;
+			productName = SocksCoreExampleTCPKeepAliveServer;
+			productReference = "_____Product_SocksCoreExampleTCPKeepAliveServer" /* SocksCoreExampleTCPKeepAliveServer */;
+			productType = "com.apple.product-type.tool";
+		};
+		"______Target_SocksCoreExampleTCPServer" /* SocksCoreExampleTCPServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SocksCoreExampleTCPServer" /* Build configuration list for PBXNativeTarget "SocksCoreExampleTCPServer" */;
+			buildPhases = (
+				CompilePhase_SocksCoreExampleTCPServer /* Sources */,
+				"___LinkPhase_SocksCoreExampleTCPServer" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_SocksCore /* PBXTargetDependency */,
+			);
+			name = SocksCoreExampleTCPServer;
+			productName = SocksCoreExampleTCPServer;
+			productReference = "_____Product_SocksCoreExampleTCPServer" /* SocksCoreExampleTCPServer */;
+			productType = "com.apple.product-type.tool";
+		};
+		"______Target_SocksExampleTCPClient" /* SocksExampleTCPClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SocksExampleTCPClient" /* Build configuration list for PBXNativeTarget "SocksExampleTCPClient" */;
+			buildPhases = (
+				CompilePhase_SocksExampleTCPClient /* Sources */,
+				"___LinkPhase_SocksExampleTCPClient" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socks /* PBXTargetDependency */,
+			);
+			name = SocksExampleTCPClient;
+			productName = SocksExampleTCPClient;
+			productReference = "_____Product_SocksExampleTCPClient" /* SocksExampleTCPClient */;
+			productType = "com.apple.product-type.tool";
+		};
+		"______Target_SocksExampleTCPServer" /* SocksExampleTCPServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SocksExampleTCPServer" /* Build configuration list for PBXNativeTarget "SocksExampleTCPServer" */;
+			buildPhases = (
+				CompilePhase_SocksExampleTCPServer /* Sources */,
+				"___LinkPhase_SocksExampleTCPServer" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socks /* PBXTargetDependency */,
+			);
+			name = SocksExampleTCPServer;
+			productName = SocksExampleTCPServer;
+			productReference = "_____Product_SocksExampleTCPServer" /* SocksExampleTCPServer */;
+			productType = "com.apple.product-type.tool";
+		};
+		"______Target_SocksExampleUDPClient" /* SocksExampleUDPClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SocksExampleUDPClient" /* Build configuration list for PBXNativeTarget "SocksExampleUDPClient" */;
+			buildPhases = (
+				CompilePhase_SocksExampleUDPClient /* Sources */,
+				"___LinkPhase_SocksExampleUDPClient" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socks /* PBXTargetDependency */,
+			);
+			name = SocksExampleUDPClient;
+			productName = SocksExampleUDPClient;
+			productReference = "_____Product_SocksExampleUDPClient" /* SocksExampleUDPClient */;
+			productType = "com.apple.product-type.tool";
+		};
+		"______Target_SocksExampleUDPServer" /* SocksExampleUDPServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SocksExampleUDPServer" /* Build configuration list for PBXNativeTarget "SocksExampleUDPServer" */;
+			buildPhases = (
+				CompilePhase_SocksExampleUDPServer /* Sources */,
+				"___LinkPhase_SocksExampleUDPServer" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socks /* PBXTargetDependency */,
+			);
+			name = SocksExampleUDPServer;
+			productName = SocksExampleUDPServer;
+			productReference = "_____Product_SocksExampleUDPServer" /* SocksExampleUDPServer */;
+			productType = "com.apple.product-type.tool";
+		};
+		"______Target_SwiftyMavLink" /* SwiftyMavLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SwiftyMavLink" /* Build configuration list for PBXNativeTarget "SwiftyMavLink" */;
+			buildPhases = (
+				CompilePhase_SwiftyMavLink /* Sources */,
+				"___LinkPhase_SwiftyMavLink" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socks /* PBXTargetDependency */,
+				__Dependency_SocksCore /* PBXTargetDependency */,
+			);
+			name = SwiftyMavLink;
+			productName = SwiftyMavLink;
+			productReference = "_____Product_SwiftyMavLink" /* SwiftyMavLink */;
+			productType = "com.apple.product-type.tool";
+		};
+		"______Target_SwiftyMavLinkTestSuite" /* SwiftyMavLinkTestSuite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SwiftyMavLinkTestSuite" /* Build configuration list for PBXNativeTarget "SwiftyMavLinkTestSuite" */;
+			buildPhases = (
+				CompilePhase_SwiftyMavLinkTestSuite /* Sources */,
+				"___LinkPhase_SwiftyMavLinkTestSuite" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Socks /* PBXTargetDependency */,
+				__Dependency_SocksCore /* PBXTargetDependency */,
+				__Dependency_SwiftyMavLink /* PBXTargetDependency */,
+			);
+			name = SwiftyMavLinkTestSuite;
+			productName = SwiftyMavLinkTestSuite;
+			productReference = "_____Product_SwiftyMavLinkTestSuite" /* SwiftyMavLinkTestSuite.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "SwiftyMavLink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"______Target_Socks" /* Socks */,
+				"______Target_SocksCore" /* SocksCore */,
+				"______Target_SocksCoreExampleTCPClient" /* SocksCoreExampleTCPClient */,
+				"______Target_SocksCoreExampleTCPKeepAliveServer" /* SocksCoreExampleTCPKeepAliveServer */,
+				"______Target_SocksCoreExampleTCPServer" /* SocksCoreExampleTCPServer */,
+				"______Target_SocksExampleTCPClient" /* SocksExampleTCPClient */,
+				"______Target_SocksExampleTCPServer" /* SocksExampleTCPServer */,
+				"______Target_SocksExampleUDPClient" /* SocksExampleUDPClient */,
+				"______Target_SocksExampleUDPServer" /* SocksExampleUDPServer */,
+				"______Target_SwiftyMavLink" /* SwiftyMavLink */,
+				"______Target_SwiftyMavLinkTestSuite" /* SwiftyMavLinkTestSuite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CompilePhase_Socks /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/Socks/Socks.swift" /* Socks.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/Socks/SynchronousTCPServer.swift" /* SynchronousTCPServer.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/Socks/SynchronousUDPServer.swift" /* SynchronousUDPServer.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/Socks/TCPClient.swift" /* TCPClient.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/Socks/UDPClient.swift" /* UDPClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SocksCore /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Address+C.swift" /* Address+C.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Address.swift" /* Address.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Bytes.swift" /* Bytes.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Conversions.swift" /* Conversions.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Error.swift" /* Error.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/FDSet.swift" /* FDSet.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/InternetSocket.swift" /* InternetSocket.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Pipe.swift" /* Pipe.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Select.swift" /* Select.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Socket.swift" /* Socket.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/SocketOptions.swift" /* SocketOptions.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/TCPSocket.swift" /* TCPSocket.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/Types.swift" /* Types.swift in Sources */,
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCore/UDPSocket.swift" /* UDPSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SocksCoreExampleTCPClient /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPClient/main.swift" /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SocksCoreExampleTCPKeepAliveServer /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPKeepAliveServer/main.swift" /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SocksCoreExampleTCPServer /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksCoreExampleTCPServer/main.swift" /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SocksExampleTCPClient /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleTCPClient/main.swift" /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SocksExampleTCPServer /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleTCPServer/main.swift" /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SocksExampleUDPClient /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleUDPClient/main.swift" /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SocksExampleUDPServer /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleUDPServer/main.swift" /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SwiftyMavLink /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Sources/SwiftyMavLink/main.swift /* main.swift in Sources */,
+				"__src_cc_ref_Sources/SwiftyMavLink/Mavlink+Types.swift" /* Mavlink+Types.swift in Sources */,
+				FFB346A81D141038009715BF /* MavlinkParserError.swift in Sources */,
+				FFB346A51D141028009715BF /* Data+Mavlink.swift in Sources */,
+				FFB346A71D141031009715BF /* Package.swift in Sources */,
+				FFB346A91D141040009715BF /* MavlinkParser.swift in Sources */,
+				__src_cc_ref_Sources/SwiftyMavLink/Mavlink.swift /* Mavlink.swift in Sources */,
+				FFB346A61D14102D009715BF /* Checksum.swift in Sources */,
+				"__src_cc_ref_Sources/SwiftyMavLink/UInt32+Extension.swift" /* UInt32+Extension.swift in Sources */,
+				__src_cc_ref_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift in Sources */,
+				__src_cc_ref_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SwiftyMavLinkTestSuite /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Tests/SwiftyMavLink/MavlinkTests.swift /* MavlinkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		__Dependency_Socks /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Socks" /* Socks */;
+			targetProxy = FF739D341D121C9800C87410 /* PBXContainerItemProxy */;
+		};
+		__Dependency_SocksCore /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SocksCore" /* SocksCore */;
+			targetProxy = FF739D331D121C9800C87410 /* PBXContainerItemProxy */;
+		};
+		__Dependency_SwiftyMavLink /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SwiftyMavLink" /* SwiftyMavLink */;
+			targetProxy = FF739D351D121C9800C87410 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		_ReleaseConf_Socks /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = SwiftyMavLink.xcodeproj/Socks_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+			};
+			name = Release;
+		};
+		_ReleaseConf_SocksCore /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = SwiftyMavLink.xcodeproj/SocksCore_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+			};
+			name = Release;
+		};
+		_ReleaseConf_SocksCoreExampleTCPClient /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SocksCoreExampleTCPKeepAliveServer /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SocksCoreExampleTCPServer /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SocksExampleTCPClient /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SocksExampleTCPServer /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SocksExampleUDPClient /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SocksExampleUDPServer /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SwiftyMavLink /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Mavlink-0.1.0";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SwiftyMavLinkTestSuite /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Mavlink-0.1.0";
+				INFOPLIST_FILE = SwiftyMavLink.xcodeproj/SwiftyMavLinkTestSuite_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		"___DebugConf_Socks" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = SwiftyMavLink.xcodeproj/Socks_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SocksCore" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = SwiftyMavLink.xcodeproj/SocksCore_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SocksCoreExampleTCPClient" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SocksCoreExampleTCPKeepAliveServer" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SocksCoreExampleTCPServer" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SocksExampleTCPClient" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SocksExampleTCPServer" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SocksExampleUDPClient" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SocksExampleUDPServer" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SwiftyMavLink" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Mavlink-0.1.0";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SwiftyMavLinkTestSuite" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Mavlink-0.1.0";
+				INFOPLIST_FILE = SwiftyMavLink.xcodeproj/SwiftyMavLinkTestSuite_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"_____Release_" /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_SwiftyMavLink.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_SwiftyMavLink.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		"___RootConfs_" /* Build configuration list for PBXProject "SwiftyMavLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Socks" /* Build configuration list for PBXNativeTarget "Socks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Socks" /* Debug */,
+				_ReleaseConf_Socks /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SocksCore" /* Build configuration list for PBXNativeTarget "SocksCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SocksCore" /* Debug */,
+				_ReleaseConf_SocksCore /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SocksCoreExampleTCPClient" /* Build configuration list for PBXNativeTarget "SocksCoreExampleTCPClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SocksCoreExampleTCPClient" /* Debug */,
+				_ReleaseConf_SocksCoreExampleTCPClient /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SocksCoreExampleTCPKeepAliveServer" /* Build configuration list for PBXNativeTarget "SocksCoreExampleTCPKeepAliveServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SocksCoreExampleTCPKeepAliveServer" /* Debug */,
+				_ReleaseConf_SocksCoreExampleTCPKeepAliveServer /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SocksCoreExampleTCPServer" /* Build configuration list for PBXNativeTarget "SocksCoreExampleTCPServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SocksCoreExampleTCPServer" /* Debug */,
+				_ReleaseConf_SocksCoreExampleTCPServer /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SocksExampleTCPClient" /* Build configuration list for PBXNativeTarget "SocksExampleTCPClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SocksExampleTCPClient" /* Debug */,
+				_ReleaseConf_SocksExampleTCPClient /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SocksExampleTCPServer" /* Build configuration list for PBXNativeTarget "SocksExampleTCPServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SocksExampleTCPServer" /* Debug */,
+				_ReleaseConf_SocksExampleTCPServer /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SocksExampleUDPClient" /* Build configuration list for PBXNativeTarget "SocksExampleUDPClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SocksExampleUDPClient" /* Debug */,
+				_ReleaseConf_SocksExampleUDPClient /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SocksExampleUDPServer" /* Build configuration list for PBXNativeTarget "SocksExampleUDPServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SocksExampleUDPServer" /* Debug */,
+				_ReleaseConf_SocksExampleUDPServer /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SwiftyMavLink" /* Build configuration list for PBXNativeTarget "SwiftyMavLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SwiftyMavLink" /* Debug */,
+				_ReleaseConf_SwiftyMavLink /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SwiftyMavLinkTestSuite" /* Build configuration list for PBXNativeTarget "SwiftyMavLinkTestSuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SwiftyMavLinkTestSuite" /* Debug */,
+				_ReleaseConf_SwiftyMavLinkTestSuite /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
+}

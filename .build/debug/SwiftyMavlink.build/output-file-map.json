@@ -2,10 +2,34 @@
   "": {
     "swift-dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/master.swiftdeps"
   },
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/main.swift": {
+    "dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/main.d",
+    "object": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/main.swift.o",
+    "swiftmodule": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/main.swiftdeps"
+  },
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/Mavlink+Types.swift": {
+    "dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink+Types.d",
+    "object": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink+Types.swift.o",
+    "swiftmodule": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink+Types~partial.swiftmodule",
+    "swift-dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink+Types.swiftdeps"
+  },
   "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/Mavlink.swift": {
     "dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink.d",
     "object": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink.swift.o",
     "swiftmodule": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink~partial.swiftmodule",
     "swift-dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Mavlink.swiftdeps"
+  },
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/Messages/Heartbeat.swift": {
+    "dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Heartbeat.d",
+    "object": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Messages/Heartbeat.swift.o",
+    "swiftmodule": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Heartbeat~partial.swiftmodule",
+    "swift-dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Heartbeat.swiftdeps"
+  },
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/Messages/Message.swift": {
+    "dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Message.d",
+    "object": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Messages/Message.swift.o",
+    "swiftmodule": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Message~partial.swiftmodule",
+    "swift-dependencies": "/Users/fran_dev/GitHub/SwiftyMavLink/.build/debug/SwiftyMavLink.build/Message.swiftdeps"
   }
 }

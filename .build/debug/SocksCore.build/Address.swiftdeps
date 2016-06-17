@@ -1,0 +1,519 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "InternetAddress"
+- "ResolvedInternetAddress"
+provides-nominal:
+- "V9SocksCore15InternetAddress"
+- "C9SocksCore23ResolvedInternetAddress"
+provides-member:
+- ["V9SocksCore15InternetAddress", ""]
+- ["C9SocksCore23ResolvedInternetAddress", ""]
+- ["P9SocksCore6Socket", ""]
+- ["V9SocksCore15InternetAddress", "resolve"]
+- ["P9SocksCore6Socket", "remoteAddress"]
+- ["P9SocksCore6Socket", "localAddress"]
+provides-dynamic-lookup:
+depends-top-level:
+- "UInt16"
+- "sockaddr"
+- !private "FloatLiteralType"
+- !private "Resolver"
+- "socklen_t"
+- !private "sizeof"
+- !private "sockaddr_in6"
+- "InternetAddress"
+- "UInt8"
+- "SocketConfig"
+- !private "Int8"
+- "String"
+- "UnsafeMutablePointer"
+- !private "precondition"
+- !private "UnicodeScalarType"
+- "Port"
+- !private "INET_ADDRSTRLEN"
+- !private "UnsafePointer"
+- "AddressFamily"
+- !private "IntegerLiteralType"
+- !private "htons"
+- !private "inet_ntop"
+- !private "INET6_ADDRSTRLEN"
+- !private ">"
+- !private "Array"
+- !private "Int32"
+- !private "StringLiteralType"
+- "CustomStringConvertible"
+- "Socket"
+- !private "Int"
+- "sockaddr_storage"
+- "ResolvedInternetAddress"
+- !private "Error"
+- !private "UnsafeBufferPointer"
+- !private "getsockname"
+- !private "fatalError"
+- !private "getpeername"
+- !private "sockaddr_in"
+depends-member:
+- !private ["O9SocksCore13AddressFamily", "deinit"]
+- ["O9SocksCore13AddressFamily", "inet"]
+- ["O9SocksCore13AddressFamily", "inet6"]
+- !private ["O9SocksCore13AddressFamily", "init"]
+- !private ["O9SocksCore13AddressFamily", "isConcrete"]
+- !private ["O9SocksCore13AddressFamily", "toCType"]
+- ["O9SocksCore13AddressFamily", "unspecified"]
+- !private ["Ps9AnyObject", "AddressFamily"]
+- !private ["Ps9AnyObject", "Array"]
+- !private ["Ps9AnyObject", "INET6_ADDRSTRLEN"]
+- !private ["Ps9AnyObject", "INET_ADDRSTRLEN"]
+- !private ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "Int32"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "UnsafeBufferPointer"]
+- !private ["Ps9AnyObject", "UnsafeMutablePointer"]
+- !private ["Ps9AnyObject", "UnsafePointer"]
+- !private ["Ps9AnyObject", "_raw"]
+- !private ["Ps9AnyObject", "addressFamily"]
+- ["Ps9AnyObject", "description"]
+- !private ["Ps9AnyObject", "fatalError"]
+- !private ["Ps9AnyObject", "htons"]
+- !private ["Ps9AnyObject", "inet_ntop"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "ipString"]
+- !private ["Ps9AnyObject", "port"]
+- !private ["Ps9AnyObject", "precondition"]
+- !private ["Ps9AnyObject", "raw"]
+- !private ["Ps9AnyObject", "rawLen"]
+- !private ["Ps9AnyObject", "sizeof"]
+- !private ["Ps9AnyObject", "sockaddr_in"]
+- !private ["Ps9AnyObject", "sockaddr_in6"]
+- !private ["Ps9AnyObject", "socklen_t"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "Iterator"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "init"]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps7Boolean", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- ["P9SocksCore21CTypeInt32Convertible", "inet"]
+- ["P9SocksCore21CTypeInt32Convertible", "inet6"]
+- !private ["P9SocksCore21CTypeInt32Convertible", "init"]
+- !private ["P9SocksCore21CTypeInt32Convertible", "isConcrete"]
+- !private ["P9SocksCore21CTypeInt32Convertible", "toCType"]
+- ["P9SocksCore21CTypeInt32Convertible", "unspecified"]
+- !private ["Ps7CVarArg", "deallocateCapacity"]
+- !private ["Ps7CVarArg", "deinitialize"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "pointee"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Comparable", "deallocateCapacity"]
+- !private ["Ps10Comparable", "deinitialize"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "localAddressResolutionFailed"]
+- !private ["Ps10Comparable", "pointee"]
+- !private ["Ps10Comparable", "remoteAddressResolutionFailed"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "deallocateCapacity"]
+- !private ["Ps28CustomDebugStringConvertible", "deinitialize"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "localAddressResolutionFailed"]
+- !private ["Ps28CustomDebugStringConvertible", "pointee"]
+- !private ["Ps28CustomDebugStringConvertible", "remoteAddressResolutionFailed"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "deallocateCapacity"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "deinitialize"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "localAddressResolutionFailed"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "pointee"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "remoteAddressResolutionFailed"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "deallocateCapacity"]
+- !private ["Ps17CustomReflectable", "deinitialize"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "localAddressResolutionFailed"]
+- !private ["Ps17CustomReflectable", "pointee"]
+- !private ["Ps17CustomReflectable", "remoteAddressResolutionFailed"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "AddressFamily"]
+- !private ["Ps23CustomStringConvertible", "Array"]
+- !private ["Ps23CustomStringConvertible", "INET6_ADDRSTRLEN"]
+- !private ["Ps23CustomStringConvertible", "INET_ADDRSTRLEN"]
+- !private ["Ps23CustomStringConvertible", "Int"]
+- !private ["Ps23CustomStringConvertible", "Int32"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "UnsafeBufferPointer"]
+- !private ["Ps23CustomStringConvertible", "UnsafeMutablePointer"]
+- !private ["Ps23CustomStringConvertible", "UnsafePointer"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "_raw"]
+- !private ["Ps23CustomStringConvertible", "addressFamily"]
+- ["Ps23CustomStringConvertible", "description"]
+- !private ["Ps23CustomStringConvertible", "fatalError"]
+- !private ["Ps23CustomStringConvertible", "htons"]
+- !private ["Ps23CustomStringConvertible", "inet_ntop"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "ipString"]
+- !private ["Ps23CustomStringConvertible", "port"]
+- !private ["Ps23CustomStringConvertible", "precondition"]
+- !private ["Ps23CustomStringConvertible", "raw"]
+- !private ["Ps23CustomStringConvertible", "rawLen"]
+- !private ["Ps23CustomStringConvertible", "sizeof"]
+- !private ["Ps23CustomStringConvertible", "sockaddr_in"]
+- !private ["Ps23CustomStringConvertible", "sockaddr_in6"]
+- !private ["Ps23CustomStringConvertible", "socklen_t"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "deallocateCapacity"]
+- !private ["Ps9Equatable", "deinitialize"]
+- ["Ps9Equatable", "inet"]
+- ["Ps9Equatable", "inet6"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isConcrete"]
+- !private ["Ps9Equatable", "localAddressResolutionFailed"]
+- !private ["Ps9Equatable", "pointee"]
+- !private ["Ps9Equatable", "remoteAddressResolutionFailed"]
+- !private ["Ps9Equatable", "toCType"]
+- ["Ps9Equatable", "unspecified"]
+- !private ["V9SocksCore5Error", "deinit"]
+- !private ["V9SocksCore5Error", "init"]
+- !private ["Ps13ErrorProtocol", "init"]
+- !private ["O9SocksCore11ErrorReason", "localAddressResolutionFailed"]
+- !private ["O9SocksCore11ErrorReason", "remoteAddressResolutionFailed"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "localAddressResolutionFailed"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "remoteAddressResolutionFailed"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "deallocateCapacity"]
+- !private ["Ps8Hashable", "deinitialize"]
+- ["Ps8Hashable", "inet"]
+- ["Ps8Hashable", "inet6"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isConcrete"]
+- !private ["Ps8Hashable", "localAddressResolutionFailed"]
+- !private ["Ps8Hashable", "pointee"]
+- !private ["Ps8Hashable", "remoteAddressResolutionFailed"]
+- !private ["Ps8Hashable", "toCType"]
+- ["Ps8Hashable", "unspecified"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "init"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "deinit"]
+- !private ["Si", "init"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int32", "init"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- ["V9SocksCore15InternetAddress", "AddressFamily"]
+- ["V9SocksCore15InternetAddress", "InternetAddress"]
+- ["V9SocksCore15InternetAddress", "Port"]
+- ["V9SocksCore15InternetAddress", "ResolvedInternetAddress"]
+- !private ["V9SocksCore15InternetAddress", "Resolver"]
+- ["V9SocksCore15InternetAddress", "SocketConfig"]
+- ["V9SocksCore15InternetAddress", "String"]
+- ["V9SocksCore15InternetAddress", "UInt16"]
+- ["V9SocksCore15InternetAddress", "addressFamily"]
+- ["V9SocksCore15InternetAddress", "any"]
+- ["V9SocksCore15InternetAddress", "hostname"]
+- ["V9SocksCore15InternetAddress", "init"]
+- ["V9SocksCore15InternetAddress", "localhost"]
+- ["V9SocksCore15InternetAddress", "port"]
+- ["V9SocksCore15InternetAddress", "resolve"]
+- !private ["P9SocksCore23InternetAddressResolver", "init"]
+- !private ["P9SocksCore23InternetAddressResolver", "resolve"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps10MirrorPath", "localAddressResolutionFailed"]
+- !private ["Ps10MirrorPath", "remoteAddressResolutionFailed"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "init"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "init"]
+- !private ["Ps21NilLiteralConvertible", "pointee"]
+- ["Ps21NilLiteralConvertible", "some"]
+- !private ["Sq", "pointee"]
+- ["Sq", "some"]
+- !private ["Ps12OutputStream", "init"]
+- !private ["Ps12OutputStream", "localAddressResolutionFailed"]
+- !private ["Ps12OutputStream", "remoteAddressResolutionFailed"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "init"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["P9SocksCore9RawSocket", "Error"]
+- ["P9SocksCore9RawSocket", "ResolvedInternetAddress"]
+- !private ["P9SocksCore9RawSocket", "UnsafeMutablePointer"]
+- !private ["P9SocksCore9RawSocket", "descriptor"]
+- !private ["P9SocksCore9RawSocket", "getpeername"]
+- !private ["P9SocksCore9RawSocket", "getsockname"]
+- !private ["P9SocksCore9RawSocket", "sizeof"]
+- !private ["P9SocksCore9RawSocket", "sockaddr"]
+- !private ["P9SocksCore9RawSocket", "sockaddr_storage"]
+- !private ["P9SocksCore9RawSocket", "socklen_t"]
+- ["C9SocksCore23ResolvedInternetAddress", "AddressFamily"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "Array"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "INET6_ADDRSTRLEN"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "INET_ADDRSTRLEN"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "Int"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "Int32"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "Int8"]
+- ["C9SocksCore23ResolvedInternetAddress", "String"]
+- ["C9SocksCore23ResolvedInternetAddress", "UInt16"]
+- ["C9SocksCore23ResolvedInternetAddress", "UInt8"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "UnsafeBufferPointer"]
+- ["C9SocksCore23ResolvedInternetAddress", "UnsafeMutablePointer"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "UnsafePointer"]
+- ["C9SocksCore23ResolvedInternetAddress", "_raw"]
+- ["C9SocksCore23ResolvedInternetAddress", "addressFamily"]
+- ["C9SocksCore23ResolvedInternetAddress", "asData"]
+- ["C9SocksCore23ResolvedInternetAddress", "deinit"]
+- ["C9SocksCore23ResolvedInternetAddress", "description"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "fatalError"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "htons"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "inet_ntop"]
+- ["C9SocksCore23ResolvedInternetAddress", "init"]
+- ["C9SocksCore23ResolvedInternetAddress", "ipString"]
+- ["C9SocksCore23ResolvedInternetAddress", "port"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "precondition"]
+- ["C9SocksCore23ResolvedInternetAddress", "raw"]
+- ["C9SocksCore23ResolvedInternetAddress", "rawLen"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "sizeof"]
+- ["C9SocksCore23ResolvedInternetAddress", "sockaddr"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "sockaddr_in"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "sockaddr_in6"]
+- ["C9SocksCore23ResolvedInternetAddress", "sockaddr_storage"]
+- ["C9SocksCore23ResolvedInternetAddress", "socklen_t"]
+- !private ["V9SocksCore8Resolver", "deinit"]
+- !private ["V9SocksCore8Resolver", "init"]
+- !private ["V9SocksCore8Resolver", "resolve"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["P9SocksCore6Socket", "Error"]
+- ["P9SocksCore6Socket", "ResolvedInternetAddress"]
+- !private ["P9SocksCore6Socket", "UnsafeMutablePointer"]
+- !private ["P9SocksCore6Socket", "descriptor"]
+- !private ["P9SocksCore6Socket", "getpeername"]
+- !private ["P9SocksCore6Socket", "getsockname"]
+- ["P9SocksCore6Socket", "localAddress"]
+- ["P9SocksCore6Socket", "remoteAddress"]
+- !private ["P9SocksCore6Socket", "sizeof"]
+- !private ["P9SocksCore6Socket", "sockaddr"]
+- !private ["P9SocksCore6Socket", "sockaddr_storage"]
+- !private ["P9SocksCore6Socket", "socklen_t"]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Streamable", "localAddressResolutionFailed"]
+- !private ["Ps10Streamable", "remoteAddressResolutionFailed"]
+- !private ["Ps10Strideable", "deallocateCapacity"]
+- !private ["Ps10Strideable", "deinitialize"]
+- !private ["Ps10Strideable", "init"]
+- !private ["Ps10Strideable", "pointee"]
+- !private ["SS", "init"]
+- !private ["SS", "localAddressResolutionFailed"]
+- !private ["SS", "remoteAddressResolutionFailed"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps30StringInterpolationConvertible", "localAddressResolutionFailed"]
+- !private ["Ps30StringInterpolationConvertible", "remoteAddressResolutionFailed"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "localAddressResolutionFailed"]
+- !private ["Ps24StringLiteralConvertible", "remoteAddressResolutionFailed"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt32", "init"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "localAddressResolutionFailed"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "remoteAddressResolutionFailed"]
+- !private ["SR", "Iterator"]
+- !private ["SR", "_Element"]
+- !private ["SR", "init"]
+- !private ["Sp", "deallocateCapacity"]
+- !private ["Sp", "deinitialize"]
+- !private ["Sp", "init"]
+- !private ["Sp", "pointee"]
+- !private ["SP", "init"]
+- !private ["SP", "pointee"]
+- !private ["Ps15UnsignedInteger", "init"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "localAddressResolutionFailed"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "remoteAddressResolutionFailed"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "localAddressResolutionFailed"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "remoteAddressResolutionFailed"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "localAddressResolutionFailed"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "remoteAddressResolutionFailed"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "localAddressResolutionFailed"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "remoteAddressResolutionFailed"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps8_Pointer", "deallocateCapacity"]
+- !private ["Ps8_Pointer", "deinitialize"]
+- !private ["Ps8_Pointer", "init"]
+- !private ["Ps8_Pointer", "pointee"]
+- !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "deallocateCapacity"]
+- !private ["Ps11_Strideable", "deinitialize"]
+- !private ["Ps11_Strideable", "init"]
+- !private ["Ps11_Strideable", "pointee"]
+- !private ["VSC11sockaddr_in", "sin_addr"]
+- !private ["VSC11sockaddr_in", "sin_port"]
+- !private ["VSC12sockaddr_in6", "sin6_addr"]
+- !private ["VSC12sockaddr_in6", "sin6_port"]
+- !private ["VSC16sockaddr_storage", "ss_family"]
+depends-nominal:
+- "O9SocksCore13AddressFamily"
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "Ps7Boolean"
+- !private "Ps25BooleanLiteralConvertible"
+- "P9SocksCore21CTypeInt32Convertible"
+- !private "Ps7CVarArg"
+- !private "Vs9Character"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "V9SocksCore5Error"
+- !private "Ps13ErrorProtocol"
+- !private "O9SocksCore11ErrorReason"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25IntegerLiteralConvertible"
+- "V9SocksCore15InternetAddress"
+- !private "P9SocksCore23InternetAddressResolver"
+- !private "Ps16IteratorProtocol"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps12OutputStream"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- "P9SocksCore9RawSocket"
+- "C9SocksCore23ResolvedInternetAddress"
+- !private "V9SocksCore8Resolver"
+- !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- "P9SocksCore6Socket"
+- !private "Vs12StaticString"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "SR"
+- !private "Sp"
+- !private "SP"
+- !private "Ps15UnsignedInteger"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps8_Pointer"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+- !private "VSC11sockaddr_in"
+- !private "VSC12sockaddr_in6"
+- !private "VSC16sockaddr_storage"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Mavlink-0.1.0/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+interface-hash: "6b6ccd0c961913fab6541d2cce4528bc"

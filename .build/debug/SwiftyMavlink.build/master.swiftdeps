@@ -1,5 +1,9 @@
-version: "Apple Swift version 3.0-dev (LLVM 8fcf602916, Clang cf0a734990, Swift 000d413a62)"
-options: "c24d7fab89d96beee5f3db35a4cc7358"
-build_time: [519135020, 185086000]
+version: "Apple Swift version 3.0 (swiftlang-800.0.30 clang-800.0.24)"
+options: "583eb09944f5ca53de5d9d2aef8fc2d9"
+build_time: [519348110, 37592000]
 inputs:
-  "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/Mavlink.swift": [519135018, 0]
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/main.swift": !private [519347950, 0]
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/Mavlink+Types.swift": [519297289, 0]
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/Mavlink.swift": [519348101, 0]
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/Messages/Heartbeat.swift": [519347941, 0]
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Sources/SwiftyMavLink/Messages/Message.swift": [519347929, 0]

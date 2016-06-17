@@ -1,0 +1,9 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.30 clang-800.0.24)"
+options: "a855ae34a9e661ed0ea035231a688d15"
+build_time: [519346647, 343307000]
+inputs:
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Socks-0.7.0/Sources/Socks/Socks.swift": [519346643, 0]
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Socks-0.7.0/Sources/Socks/SynchronousTCPServer.swift": [519346643, 0]
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Socks-0.7.0/Sources/Socks/SynchronousUDPServer.swift": [519346643, 0]
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Socks-0.7.0/Sources/Socks/TCPClient.swift": [519346643, 0]
+  "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Socks-0.7.0/Sources/Socks/UDPClient.swift": [519346643, 0]

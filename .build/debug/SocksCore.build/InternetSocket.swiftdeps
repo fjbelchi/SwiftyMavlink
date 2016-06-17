@@ -1,0 +1,127 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "InternetSocket"
+provides-nominal:
+- "P9SocksCore14InternetSocket"
+provides-member:
+- ["P9SocksCore14InternetSocket", ""]
+- ["P9SocksCore14InternetSocket", "bind"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "FloatLiteralType"
+- !private ">"
+- "InternetSocket"
+- !private "socket_bind"
+- !private "IntegerLiteralType"
+- "ResolvedInternetAddress"
+- !private "Error"
+- "Darwin"
+- "Descriptor"
+- "SocketConfig"
+- "Socket"
+depends-member:
+- !private ["Ps9AnyObject", "raw"]
+- !private ["Ps9AnyObject", "rawLen"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7Boolean", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10Comparable", "bindFailed"]
+- !private ["Ps28CustomDebugStringConvertible", "bindFailed"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "bindFailed"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "bindFailed"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "raw"]
+- !private ["Ps23CustomStringConvertible", "rawLen"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "bindFailed"]
+- !private ["V9SocksCore5Error", "deinit"]
+- !private ["V9SocksCore5Error", "init"]
+- !private ["Ps13ErrorProtocol", "init"]
+- !private ["O9SocksCore11ErrorReason", "bindFailed"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "bindFailed"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "bindFailed"]
+- ["P9SocksCore14InternetSocket", "Descriptor"]
+- !private ["P9SocksCore14InternetSocket", "Error"]
+- ["P9SocksCore14InternetSocket", "ResolvedInternetAddress"]
+- ["P9SocksCore14InternetSocket", "SocketConfig"]
+- ["P9SocksCore14InternetSocket", "address"]
+- ["P9SocksCore14InternetSocket", "bind"]
+- !private ["P9SocksCore14InternetSocket", "descriptor"]
+- ["P9SocksCore14InternetSocket", "init"]
+- !private ["P9SocksCore14InternetSocket", "socket_bind"]
+- ["P9SocksCore14InternetSocket", ""]
+- !private ["Ps10MirrorPath", "bindFailed"]
+- !private ["Ps12OutputStream", "bindFailed"]
+- ["P9SocksCore9RawSocket", "Descriptor"]
+- !private ["P9SocksCore9RawSocket", "Error"]
+- ["P9SocksCore9RawSocket", "ResolvedInternetAddress"]
+- ["P9SocksCore9RawSocket", "SocketConfig"]
+- ["P9SocksCore9RawSocket", "address"]
+- !private ["P9SocksCore9RawSocket", "descriptor"]
+- ["P9SocksCore9RawSocket", "init"]
+- !private ["P9SocksCore9RawSocket", "socket_bind"]
+- ["P9SocksCore9RawSocket", ""]
+- !private ["C9SocksCore23ResolvedInternetAddress", "raw"]
+- !private ["C9SocksCore23ResolvedInternetAddress", "rawLen"]
+- ["P9SocksCore6Socket", "Descriptor"]
+- !private ["P9SocksCore6Socket", "Error"]
+- ["P9SocksCore6Socket", "ResolvedInternetAddress"]
+- ["P9SocksCore6Socket", "SocketConfig"]
+- ["P9SocksCore6Socket", "address"]
+- !private ["P9SocksCore6Socket", "descriptor"]
+- ["P9SocksCore6Socket", "init"]
+- !private ["P9SocksCore6Socket", "socket_bind"]
+- ["P9SocksCore6Socket", ""]
+- !private ["Ps10Streamable", "bindFailed"]
+- !private ["SS", "bindFailed"]
+- !private ["Ps30StringInterpolationConvertible", "bindFailed"]
+- !private ["Ps24StringLiteralConvertible", "bindFailed"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "bindFailed"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "bindFailed"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "bindFailed"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "bindFailed"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "bindFailed"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps7Boolean"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "V9SocksCore5Error"
+- !private "Ps13ErrorProtocol"
+- !private "O9SocksCore11ErrorReason"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps8Hashable"
+- "P9SocksCore14InternetSocket"
+- !private "Ps10MirrorPath"
+- !private "Ps12OutputStream"
+- "P9SocksCore9RawSocket"
+- !private "C9SocksCore23ResolvedInternetAddress"
+- "P9SocksCore6Socket"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/fran_dev/GitHub/SwiftyMavLink/Packages/Mavlink-0.1.0/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+interface-hash: "a3f599526669ad13e91a2f47f5d53d67"
