@@ -1,7 +1,4 @@
-
 import Foundation
-
-
 
 class MyDelegate : MavlinkParserDelegate {
     func parser(parser: MavlinkParser, didReceivePacket packet: Packet, channel: Channel) {

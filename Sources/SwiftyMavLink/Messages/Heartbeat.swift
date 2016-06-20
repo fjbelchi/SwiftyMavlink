@@ -2,6 +2,7 @@
 //  SwiftyMavLink
 //
 //  Copyright © 2016 edronic. All rights reserved.
+
 import Foundation
 import Mavlink
 
@@ -16,16 +17,24 @@ struct Heartbeat {
 
 extension Heartbeat: Message {
     
-    var messageId: UInt8 {
+    static func messageId() -> UInt8 {
         return 0
     }
-    
-    var systemId: UInt8 {
+
+    static func systemId() -> UInt8 {
         return 0
     }
-    
-    var componentId: UInt8 {
+
+    static func componentId() -> UInt8 {
         return 0
+    }
+
+    static func length() -> UInt8 {
+        return 9
+    }
+    
+    static func CRSsExtra() -> UInt8 {
+        return 50
     }
     
     init(data: Data) throws {

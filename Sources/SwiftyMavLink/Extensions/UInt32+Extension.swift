@@ -1,10 +1,7 @@
 //
-//  UInt32+Extension.swift
 //  SwiftyMavLink
 //
-//  Created by Fran_DEV on 16/06/16.
-//
-//
+//  Copyright © 2016 edronic. All rights reserved.
 
 import Foundation
 
@@ -14,7 +11,6 @@ extension UInt32 {
             .map { UInt8(self >> $0 & 0x000000FF) }
     }
 }
-
 
 extension Int {
     public var toU8: UInt8{ get{return UInt8(truncatingBitPattern:self)} }

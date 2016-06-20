@@ -1,7 +1,7 @@
-
-public class Mavlink {
-    
-}
+//
+//  SwiftyMavLink
+//
+//  Copyright © 2016 edronic. All rights reserved.
 
 extension Mavlink {
 

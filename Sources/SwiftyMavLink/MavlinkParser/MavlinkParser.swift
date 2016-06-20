@@ -6,26 +6,6 @@
 import Foundation
 
 public typealias Channel = UInt8
-// MARK: Additional MAVLink service info
-
-
-/**
- Array for mapping message id to proper struct
- */
-private let messageIdToClass: [UInt8: Message.Type] = [0: Heartbeat.self]
-
-
-/**
- Message lengths array for known messages length validation
- */
-private let messageLengths: [UInt8: UInt8] = [0: 9]
-
-
-/**
- Message CRSs extra for detection incompatible XML changes
- */
-private let messageCrcsExtra: [UInt8: UInt8] = [0: 50]
-
 
 /// Alternative way to receive parsed Messages and all errors is to implement this protocol and set Parsers delegate
 public protocol MavlinkParserDelegate: class {
@@ -203,8 +183,8 @@ public class MavlinkParser {
         case .GotComponentId:
             // Check Message length is `checkMessageLength` enabled and `messageLengths` contains proper id.
             // If `messageLengths` does not contain info for current messageId, parsing will fail later on CRC check.
-            if checkMessageLength && (messageLengths[char] != nil) {
-                if let messageLength = messageLengths[char] where rxpack.length != messageLength {
+            if checkMessageLength && (Mavlink.messages[char] != nil) {
+                if let messageLength = Mavlink.messages[char]?.length() where rxpack.length != messageLength {
                     status.parseError += 1
                     status.parseState = .Idle
                     let error = MavlinkParserError.InvalidPayloadLength(messageId: char, receivedLength: rxpack.length, properLength: messageLength)
@@ -229,8 +209,10 @@ public class MavlinkParser {
             }
             
         case .GotPayload:
-            if crcExtra && (messageCrcsExtra[rxpack.messageId] != nil) { // `if let where` usage will force array lookup even if `crcExtra` is false
-                rxpack.checksum.accumulateChar(char: messageCrcsExtra[rxpack.messageId]!)
+            if crcExtra && (Mavlink.messages[rxpack.messageId] != nil) { // `if let where` usage will force array lookup even if `crcExtra` is false
+                if let extra = Mavlink.messages[rxpack.messageId]?.CRSsExtra() {
+                    rxpack.checksum.accumulateChar(char: extra)
+                }
             }
             if char != rxpack.checksum.lowByte {
                 status.parseState = .GotBadCRC1
@@ -244,7 +226,7 @@ public class MavlinkParser {
             if (status.parseState == .GotBadCRC1) || (char != rxpack.checksum.highByte) {
                 status.parseError += 1
                 status.packetReceived = .BadCRC
-                let error = messageIdToClass[rxpack.messageId] == nil ? MavlinkParserError.UnknownMessageId(messageId: rxpack.messageId) : MavlinkParserError.BadCRC
+                let error = Mavlink.messages[rxpack.messageId] == nil ? MavlinkParserError.UnknownMessageId(messageId: rxpack.messageId) : MavlinkParserError.BadCRC
                 delegate?.parser(parser: self, didFailToReceivePacketWithError: error, data: Packet(packet: rxpack), channel: channel)
             } else {
                 // Successfully got message
@@ -279,7 +261,7 @@ public class MavlinkParser {
         status.packetRxSuccessCount = status.packetRxSuccessCount &+ 1
         
         // Try to create appropriate Message structure, delegate results
-        guard let messageClass = messageIdToClass[packet.messageId] else {
+        guard let messageClass = Mavlink.messages[packet.messageId] else {
             let error = MavlinkParserError.UnknownMessageId(messageId: rxpack.messageId)
             delegate?.parser(parser: self, didFailToParseMessageFromPacket: packet, withError: error, channel: channel)
             return packet

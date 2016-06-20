@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF8B1FD81D189B8D00FA2FA6 /* Mavlink+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B1FD71D189B8D00FA2FA6 /* Mavlink+Types.swift */; };
+		FF8B1FD91D189BDA00FA2FA6 /* Mavlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B1FD51D189B5000FA2FA6 /* Mavlink.swift */; };
+		FF8B1FDB1D189EC800FA2FA6 /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B1FDA1D189EC800FA2FA6 /* UInt32+Extension.swift */; };
 		FFB346A51D141028009715BF /* Data+Mavlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3469B1D13F0C1009715BF /* Data+Mavlink.swift */; };
 		FFB346A61D14102D009715BF /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346A11D13F810009715BF /* Checksum.swift */; };
 		FFB346A71D141031009715BF /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346A31D13F870009715BF /* Package.swift */; };
@@ -56,11 +59,9 @@
 		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleTCPServer/main.swift" /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleTCPServer/main.swift" /* main.swift */; };
 		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleUDPClient/main.swift" /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleUDPClient/main.swift" /* main.swift */; };
 		"__src_cc_ref_Packages/Socks-0.7.0/Sources/SocksExampleUDPServer/main.swift" /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleUDPServer/main.swift" /* main.swift */; };
-		"__src_cc_ref_Sources/SwiftyMavLink/Mavlink+Types.swift" /* Mavlink+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Sources/SwiftyMavLink/Mavlink+Types.swift" /* Mavlink+Types.swift */; };
-		__src_cc_ref_Sources/SwiftyMavLink/Mavlink.swift /* Mavlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftyMavLink/Mavlink.swift /* Mavlink.swift */; };
+		__src_cc_ref_Sources/SwiftyMavLink/Mavlink.swift /* MyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftyMavLink/Mavlink.swift /* MyDelegate.swift */; };
 		__src_cc_ref_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift */; };
 		__src_cc_ref_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift */; };
-		"__src_cc_ref_Sources/SwiftyMavLink/UInt32+Extension.swift" /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Sources/SwiftyMavLink/UInt32+Extension.swift" /* UInt32+Extension.swift */; };
 		__src_cc_ref_Sources/SwiftyMavLink/main.swift /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftyMavLink/main.swift /* main.swift */; };
 		__src_cc_ref_Tests/SwiftyMavLink/MavlinkTests.swift /* MavlinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/SwiftyMavLink/MavlinkTests.swift /* MavlinkTests.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF8B1FD51D189B5000FA2FA6 /* Mavlink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mavlink.swift; path = Mavlink/Mavlink.swift; sourceTree = "<group>"; };
+		FF8B1FD71D189B8D00FA2FA6 /* Mavlink+Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Mavlink+Types.swift"; path = "Mavlink/Mavlink+Types.swift"; sourceTree = "<group>"; };
+		FF8B1FDA1D189EC800FA2FA6 /* UInt32+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Extensions/UInt32+Extension.swift"; sourceTree = "<group>"; };
 		FFB346971D13EEBC009715BF /* MavlinkParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MavlinkParser.swift; path = MavlinkParser/MavlinkParser.swift; sourceTree = "<group>"; };
 		FFB3469B1D13F0C1009715BF /* Data+Mavlink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+Mavlink.swift"; path = "Extensions/Data+Mavlink.swift"; sourceTree = "<group>"; };
 		FFB3469F1D13F1F9009715BF /* MavlinkParserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MavlinkParserError.swift; path = MavlinkParser/MavlinkParserError.swift; sourceTree = "<group>"; };
@@ -124,11 +128,9 @@
 		"__PBXFileRef_Packages/Socks-0.7.0/Sources/SocksExampleUDPServer/main.swift" /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		__PBXFileRef_SocksCore_Info.plist /* SocksCore_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SocksCore_Info.plist; path = SwiftyMavLink.xcodeproj/SocksCore_Info.plist; sourceTree = SOURCE_ROOT; };
 		__PBXFileRef_Socks_Info.plist /* Socks_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Socks_Info.plist; path = SwiftyMavLink.xcodeproj/Socks_Info.plist; sourceTree = SOURCE_ROOT; };
-		"__PBXFileRef_Sources/SwiftyMavLink/Mavlink+Types.swift" /* Mavlink+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mavlink+Types.swift"; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/SwiftyMavLink/Mavlink.swift /* Mavlink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mavlink.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/SwiftyMavLink/Mavlink.swift /* MyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDelegate.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Heartbeat.swift; path = Messages/Heartbeat.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Messages/Message.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Sources/SwiftyMavLink/UInt32+Extension.swift" /* UInt32+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt32+Extension.swift"; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/SwiftyMavLink/main.swift /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		__PBXFileRef_SwiftyMavLink.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = SwiftyMavLink.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_SwiftyMavLinkTestSuite_Info.plist /* SwiftyMavLinkTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SwiftyMavLinkTestSuite_Info.plist; path = SwiftyMavLink.xcodeproj/SwiftyMavLinkTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
@@ -143,7 +145,7 @@
 		"_____Product_SocksExampleUDPClient" /* SocksExampleUDPClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SocksExampleUDPClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_SocksExampleUDPServer" /* SocksExampleUDPServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SocksExampleUDPServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_SwiftyMavLink" /* SwiftyMavLink */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = SwiftyMavLink; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_SwiftyMavLinkTestSuite" /* SwiftyMavLinkTestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftyMavLinkTestSuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SwiftyMavLinkTestSuite" /* SwiftyMavLinkTestSuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwiftyMavLinkTestSuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,15 @@
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
+		FF8B1FD41D189B3200FA2FA6 /* Mavlink */ = {
+			isa = PBXGroup;
+			children = (
+				FF8B1FD51D189B5000FA2FA6 /* Mavlink.swift */,
+				FF8B1FD71D189B8D00FA2FA6 /* Mavlink+Types.swift */,
+			);
+			name = Mavlink;
+			sourceTree = "<group>";
+		};
 		FFB346961D13EE93009715BF /* MavlinkParser */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				FFB3469B1D13F0C1009715BF /* Data+Mavlink.swift */,
+				FF8B1FDA1D189EC800FA2FA6 /* UInt32+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -302,7 +314,6 @@
 			children = (
 				__PBXFileRef_Package.swift /* Package.swift */,
 				"_____Configs_" /* Configs */,
-				"_____Sources_" /* Sources */,
 				Dependencies_ /* Dependencies */,
 				"_______Tests_" /* Tests */,
 				"____Products_" /* Products */,
@@ -330,6 +341,7 @@
 		"_____Configs_" /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				"_____Sources_" /* Sources */,
 				__PBXFileRef_SwiftyMavLink.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */,
 			);
 			name = Configs;
@@ -446,13 +458,12 @@
 		"_______Group_SwiftyMavLink" /* SwiftyMavLink */ = {
 			isa = PBXGroup;
 			children = (
+				FF8B1FD41D189B3200FA2FA6 /* Mavlink */,
 				FFB3469A1D13F09C009715BF /* Extensions */,
 				FFB346991D13EF55009715BF /* Messages */,
 				FFB346961D13EE93009715BF /* MavlinkParser */,
 				__PBXFileRef_Sources/SwiftyMavLink/main.swift /* main.swift */,
-				"__PBXFileRef_Sources/SwiftyMavLink/Mavlink+Types.swift" /* Mavlink+Types.swift */,
-				__PBXFileRef_Sources/SwiftyMavLink/Mavlink.swift /* Mavlink.swift */,
-				"__PBXFileRef_Sources/SwiftyMavLink/UInt32+Extension.swift" /* UInt32+Extension.swift */,
+				__PBXFileRef_Sources/SwiftyMavLink/Mavlink.swift /* MyDelegate.swift */,
 			);
 			name = SwiftyMavLink;
 			path = Sources/SwiftyMavLink;
@@ -797,15 +808,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				FF8B1FD81D189B8D00FA2FA6 /* Mavlink+Types.swift in Sources */,
 				__src_cc_ref_Sources/SwiftyMavLink/main.swift /* main.swift in Sources */,
-				"__src_cc_ref_Sources/SwiftyMavLink/Mavlink+Types.swift" /* Mavlink+Types.swift in Sources */,
+				FF8B1FD91D189BDA00FA2FA6 /* Mavlink.swift in Sources */,
 				FFB346A81D141038009715BF /* MavlinkParserError.swift in Sources */,
 				FFB346A51D141028009715BF /* Data+Mavlink.swift in Sources */,
 				FFB346A71D141031009715BF /* Package.swift in Sources */,
+				FF8B1FDB1D189EC800FA2FA6 /* UInt32+Extension.swift in Sources */,
 				FFB346A91D141040009715BF /* MavlinkParser.swift in Sources */,
-				__src_cc_ref_Sources/SwiftyMavLink/Mavlink.swift /* Mavlink.swift in Sources */,
+				__src_cc_ref_Sources/SwiftyMavLink/Mavlink.swift /* MyDelegate.swift in Sources */,
 				FFB346A61D14102D009715BF /* Checksum.swift in Sources */,
-				"__src_cc_ref_Sources/SwiftyMavLink/UInt32+Extension.swift" /* UInt32+Extension.swift in Sources */,
 				__src_cc_ref_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift in Sources */,
 				__src_cc_ref_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift in Sources */,
 			);
