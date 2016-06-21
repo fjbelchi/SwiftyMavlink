@@ -7,7 +7,7 @@ while true {
     do {
         let client = try UDPClient(address: address)
         
-        var hearbeat = Heartbeat(type: .Quadrotor, autopilot: .ArdupilotMega, baseMode: .CustomEnabled, customMode: 0, systemStatus: .StandBy, version: .Official)
+        var hearbeat = Heartbeat(type: .Quadrotor, autopilot: .ArdupilotMega, baseMode: [.CustomEnabled, .SafetyArmed], customMode: 0, systemStatus: .StandBy, version: .Official)
         
         let bytes = hearbeat.encode()
         try client.send(bytes: bytes)
@@ -21,7 +21,9 @@ while true {
         
         parser.appendData(data: recvData as Data, channel: 0)
         
-        //    try client.close()
+        var status = SystemStatus(controlSensorPresent: .All, controlSensorEnabled: .All, controlSensorHealth: .All, load: 50, voltageBattery: 3, currentBattery: 2, batteryRemaining: 50, communicationDropRate: 0, communicationError: 0, errorCount1: 0, errorCount2: 0, errorCount3: 0, errorCount4: 0)
+        
+        try client.send(bytes: status.encode())
         
         let str = try data.toString()
         let senderStr = String(sender)

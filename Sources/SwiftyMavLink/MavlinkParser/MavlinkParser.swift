@@ -184,7 +184,7 @@ public class MavlinkParser {
             // Check Message length is `checkMessageLength` enabled and `messageLengths` contains proper id.
             // If `messageLengths` does not contain info for current messageId, parsing will fail later on CRC check.
             if checkMessageLength && (Mavlink.messages[char] != nil) {
-                if let messageLength = Mavlink.messages[char]?.length() where rxpack.length != messageLength {
+                if let messageLength = Mavlink.messages[char]?.messageLength() where rxpack.length != messageLength {
                     status.parseError += 1
                     status.parseState = .Idle
                     let error = MavlinkParserError.InvalidPayloadLength(messageId: char, receivedLength: rxpack.length, properLength: messageLength)

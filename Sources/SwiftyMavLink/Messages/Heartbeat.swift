@@ -29,7 +29,7 @@ extension Heartbeat: Message {
         return 0
     }
 
-    static func length() -> UInt8 {
+    static func messageLength() -> UInt8 {
         return 9
     }
     
@@ -52,9 +52,9 @@ extension Heartbeat: MavlinkEncodeMessage {
     func encode() -> [UInt8] {
         
         var message = mavlink_message_t()
-        mavlink_msg_heartbeat_pack(0, 0, &message,self.type.rawValue, self.autopilot.rawValue, self.baseMode.rawValue, self.customMode, self.systemStatus.rawValue)
+        mavlink_msg_heartbeat_pack(Heartbeat.systemId(), Heartbeat.componentId(), &message,self.type.rawValue, self.autopilot.rawValue, self.baseMode.rawValue, self.customMode, self.systemStatus.rawValue)
         
-        let buffer = [UInt8](repeating:0, count: 17)
+        let buffer = [UInt8](repeating:0, count: Heartbeat.length())
         
         let pointer: UnsafeMutablePointer<UInt8> = UnsafeMutablePointer(buffer)
         mavlink_msg_to_send_buffer(pointer, &message);
