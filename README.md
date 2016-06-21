@@ -4,3 +4,4 @@ Communicate with your drone using Swift
 
 ## Messages
 - Heartbeat
+- SystemStatus
