@@ -6,6 +6,7 @@
 import Foundation
 import Mavlink
 
+/// The system time is the time of the master clock, typically the computer clock of the main onboard computer.
 public struct SystemTime {
     let timestamp: Date
     let bootTime: Date

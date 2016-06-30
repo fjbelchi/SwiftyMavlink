@@ -17,6 +17,7 @@
 		FFB346A81D141038009715BF /* MavlinkParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3469F1D13F1F9009715BF /* MavlinkParserError.swift */; };
 		FFB346A91D141040009715BF /* MavlinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346971D13EEBC009715BF /* MavlinkParser.swift */; };
 		FFD424CF1D251FDE00EEC5F6 /* SystemTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD424CD1D251CBA00EEC5F6 /* SystemTime.swift */; };
+		FFD424D11D25364B00EEC5F6 /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD424D01D25364B00EEC5F6 /* Ping.swift */; };
 		_LinkFileRef_SocksCore_via_Socks /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
 		_LinkFileRef_SocksCore_via_SocksCoreExampleTCPClient /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
 		_LinkFileRef_SocksCore_via_SocksCoreExampleTCPKeepAliveServer /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
@@ -103,6 +104,7 @@
 		FFB346A11D13F810009715BF /* Checksum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = MavlinkParser/Checksum.swift; sourceTree = "<group>"; };
 		FFB346A31D13F870009715BF /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = MavlinkParser/Package.swift; sourceTree = "<group>"; };
 		FFD424CD1D251CBA00EEC5F6 /* SystemTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemTime.swift; path = Messages/SystemTime.swift; sourceTree = "<group>"; };
+		FFD424D01D25364B00EEC5F6 /* Ping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ping.swift; path = Messages/Ping.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/Socks.swift" /* Socks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socks.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/SynchronousTCPServer.swift" /* SynchronousTCPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousTCPServer.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				__PBXFileRef_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift */,
 				FF7771211D19A509008ACCC2 /* SystemStatus.swift */,
 				FFD424CD1D251CBA00EEC5F6 /* SystemTime.swift */,
+				FFD424D01D25364B00EEC5F6 /* Ping.swift */,
 			);
 			name = Messages;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 				FF8B1FD81D189B8D00FA2FA6 /* Mavlink+Types.swift in Sources */,
 				__src_cc_ref_Sources/SwiftyMavLink/main.swift /* main.swift in Sources */,
 				FF8B1FD91D189BDA00FA2FA6 /* Mavlink.swift in Sources */,
+				FFD424D11D25364B00EEC5F6 /* Ping.swift in Sources */,
 				FFB346A81D141038009715BF /* MavlinkParserError.swift in Sources */,
 				FFB346A51D141028009715BF /* Data+Mavlink.swift in Sources */,
 				FF7771231D19A56B008ACCC2 /* SystemStatus.swift in Sources */,
