@@ -6,7 +6,10 @@
 import Foundation
 import Mavlink
 
-struct SystemStatus {
+typealias Voltage = UInt16
+typealias Current = Int16
+
+public struct SystemStatus {
     // -- Sensors
     let controlSensorPresent: Mavlink.SystemStatusSensor
     let controlSensorEnabled: Mavlink.SystemStatusSensor
@@ -14,8 +17,8 @@ struct SystemStatus {
     
     // -- Battery
     let load: UInt16 // Maximum usage in percent of the mainloop time, (0%: 0, 100%: 1000) should be always below 1000
-    let voltageBattery: UInt16 // Battery voltage, in millivolts (1 = 1 millivolt)
-    let currentBattery: Int16 // Battery current, in 10*milliamperes (1 = 10 milliampere), -1: autopilot does not measure the current
+    let voltageBattery: Voltage // Battery voltage, in millivolts (1 = 1 millivolt)
+    let currentBattery: Current // Battery current, in 10*milliamperes (1 = 10 milliampere), -1: autopilot does not measure the current
     let batteryRemaining: Int8 // Remaining battery energy: (0%: 0, 100%: 100), -1: autopilot estimate the remaining battery
     
     // -- Communication
@@ -34,27 +37,27 @@ struct SystemStatus {
 
 extension SystemStatus: Message {
     
-    static func messageId() -> UInt8 {
+    public static func messageId() -> UInt8 {
         return 1
     }
     
-    static func systemId() -> UInt8 {
+    public static func systemId() -> UInt8 {
         return 0
     }
     
-    static func componentId() -> UInt8 {
+    public static func componentId() -> UInt8 {
         return 0
     }
     
-    static func messageLength() -> UInt8 {
+    public static func messageLength() -> UInt8 {
         return 31
     }
     
-    static func CRSsExtra() -> UInt8 {
+    public static func CRSsExtra() -> UInt8 {
         return 124
     }
     
-    init(data: Data) throws {
+    public init(data: Data) throws {
         self.controlSensorPresent = try data.mavNumber(offset: 0)
         self.controlSensorEnabled = try data.mavNumber(offset: 4)
         self.controlSensorHealth = try data.mavNumber(offset: 8)
@@ -73,7 +76,7 @@ extension SystemStatus: Message {
 
 extension SystemStatus: MavlinkEncodeMessage {
     
-    func encode() -> [UInt8] {
+    public func encode() -> [UInt8] {
         
         var message = mavlink_message_t()
         mavlink_msg_sys_status_pack(SystemStatus.messageId(),

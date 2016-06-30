@@ -25,6 +25,9 @@ while true {
         
         try client.send(bytes: status.encode())
         
+        var timestamp = SystemTime()
+        try client.send(bytes: timestamp.encode())
+        
         let str = try data.toString()
         let senderStr = String(sender)
         print("Received: \n\(str) from \(senderStr)")

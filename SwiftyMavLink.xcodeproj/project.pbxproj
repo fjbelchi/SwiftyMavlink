@@ -11,12 +11,12 @@
 		FF8B1FD81D189B8D00FA2FA6 /* Mavlink+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B1FD71D189B8D00FA2FA6 /* Mavlink+Types.swift */; };
 		FF8B1FD91D189BDA00FA2FA6 /* Mavlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B1FD51D189B5000FA2FA6 /* Mavlink.swift */; };
 		FF8B1FDB1D189EC800FA2FA6 /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B1FDA1D189EC800FA2FA6 /* UInt32+Extension.swift */; };
-		FFA33B451D19FD1F001FC7A8 /* Voltage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA33B441D19FD1F001FC7A8 /* Voltage.swift */; };
 		FFB346A51D141028009715BF /* Data+Mavlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3469B1D13F0C1009715BF /* Data+Mavlink.swift */; };
 		FFB346A61D14102D009715BF /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346A11D13F810009715BF /* Checksum.swift */; };
 		FFB346A71D141031009715BF /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346A31D13F870009715BF /* Package.swift */; };
 		FFB346A81D141038009715BF /* MavlinkParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3469F1D13F1F9009715BF /* MavlinkParserError.swift */; };
 		FFB346A91D141040009715BF /* MavlinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346971D13EEBC009715BF /* MavlinkParser.swift */; };
+		FFD424CF1D251FDE00EEC5F6 /* SystemTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD424CD1D251CBA00EEC5F6 /* SystemTime.swift */; };
 		_LinkFileRef_SocksCore_via_Socks /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
 		_LinkFileRef_SocksCore_via_SocksCoreExampleTCPClient /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
 		_LinkFileRef_SocksCore_via_SocksCoreExampleTCPKeepAliveServer /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
@@ -97,12 +97,12 @@
 		FF8B1FD51D189B5000FA2FA6 /* Mavlink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mavlink.swift; path = Mavlink/Mavlink.swift; sourceTree = "<group>"; };
 		FF8B1FD71D189B8D00FA2FA6 /* Mavlink+Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Mavlink+Types.swift"; path = "Mavlink/Mavlink+Types.swift"; sourceTree = "<group>"; };
 		FF8B1FDA1D189EC800FA2FA6 /* UInt32+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Extensions/UInt32+Extension.swift"; sourceTree = "<group>"; };
-		FFA33B441D19FD1F001FC7A8 /* Voltage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Voltage.swift; path = Types/Voltage.swift; sourceTree = "<group>"; };
 		FFB346971D13EEBC009715BF /* MavlinkParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MavlinkParser.swift; path = MavlinkParser/MavlinkParser.swift; sourceTree = "<group>"; };
 		FFB3469B1D13F0C1009715BF /* Data+Mavlink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+Mavlink.swift"; path = "Extensions/Data+Mavlink.swift"; sourceTree = "<group>"; };
 		FFB3469F1D13F1F9009715BF /* MavlinkParserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MavlinkParserError.swift; path = MavlinkParser/MavlinkParserError.swift; sourceTree = "<group>"; };
 		FFB346A11D13F810009715BF /* Checksum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = MavlinkParser/Checksum.swift; sourceTree = "<group>"; };
 		FFB346A31D13F870009715BF /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = MavlinkParser/Package.swift; sourceTree = "<group>"; };
+		FFD424CD1D251CBA00EEC5F6 /* SystemTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemTime.swift; path = Messages/SystemTime.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/Socks.swift" /* Socks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socks.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/Socks-0.7.0/Sources/Socks/SynchronousTCPServer.swift" /* SynchronousTCPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousTCPServer.swift; sourceTree = "<group>"; };
@@ -276,14 +276,6 @@
 			name = Mavlink;
 			sourceTree = "<group>";
 		};
-		FFA33B431D19FD04001FC7A8 /* Types */ = {
-			isa = PBXGroup;
-			children = (
-				FFA33B441D19FD1F001FC7A8 /* Voltage.swift */,
-			);
-			name = Types;
-			sourceTree = "<group>";
-		};
 		FFB346961D13EE93009715BF /* MavlinkParser */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +293,7 @@
 				__PBXFileRef_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift */,
 				__PBXFileRef_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift */,
 				FF7771211D19A509008ACCC2 /* SystemStatus.swift */,
+				FFD424CD1D251CBA00EEC5F6 /* SystemTime.swift */,
 			);
 			name = Messages;
 			sourceTree = "<group>";
@@ -312,6 +305,13 @@
 				FF8B1FDA1D189EC800FA2FA6 /* UInt32+Extension.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FFBAD2DC1D22D5C100FA5BAF /* Types */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Types;
 			sourceTree = "<group>";
 		};
 		TestProducts_ /* Tests */ = {
@@ -471,7 +471,7 @@
 		"_______Group_SwiftyMavLink" /* SwiftyMavLink */ = {
 			isa = PBXGroup;
 			children = (
-				FFA33B431D19FD04001FC7A8 /* Types */,
+				FFBAD2DC1D22D5C100FA5BAF /* Types */,
 				FF8B1FD41D189B3200FA2FA6 /* Mavlink */,
 				FFB3469A1D13F09C009715BF /* Extensions */,
 				FFB346991D13EF55009715BF /* Messages */,
@@ -833,8 +833,8 @@
 				FFB346A91D141040009715BF /* MavlinkParser.swift in Sources */,
 				__src_cc_ref_Sources/SwiftyMavLink/Mavlink.swift /* MyDelegate.swift in Sources */,
 				FFB346A61D14102D009715BF /* Checksum.swift in Sources */,
+				FFD424CF1D251FDE00EEC5F6 /* SystemTime.swift in Sources */,
 				__src_cc_ref_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift in Sources */,
-				FFA33B451D19FD1F001FC7A8 /* Voltage.swift in Sources */,
 				__src_cc_ref_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
