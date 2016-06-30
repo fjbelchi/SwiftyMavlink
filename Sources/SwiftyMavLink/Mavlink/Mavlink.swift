@@ -11,6 +11,7 @@ public struct Mavlink {
         Heartbeat.messageId(): Heartbeat.self,
         SystemStatus.messageId(): SystemStatus.self,
         SystemTime.messageId(): SystemTime.self,
-        Ping.messageId(): Ping.self
+        Ping.messageId(): Ping.self,
+        RequestDataStream.messageId(): RequestDataStream.self
     ]
 }

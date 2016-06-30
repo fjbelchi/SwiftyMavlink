@@ -19,6 +19,8 @@ class MyDelegate : MavlinkParserDelegate {
             print("systemTime: \(systemTime)")
         } else if let ping = message as? Ping {
             print("ping: \(ping)")
+        } else if let requestDataStream = message as? RequestDataStream {
+            print("requestDataStream: \(requestDataStream)")
         }
     }
     

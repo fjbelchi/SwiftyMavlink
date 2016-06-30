@@ -7,12 +7,14 @@ import Foundation
 import Mavlink
 
 public struct Heartbeat {
+    
     let type: Mavlink.MavType
     let autopilot: Mavlink.Autopilot
     let baseMode: Mavlink.ModeFlag
     let customMode: UInt32
     let systemStatus: Mavlink.State
     let version: Mavlink.Version
+    
 }
 
 extension Heartbeat: Message {
