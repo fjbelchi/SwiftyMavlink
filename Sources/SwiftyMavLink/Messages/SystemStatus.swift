@@ -14,19 +14,21 @@ public struct SystemStatus {
     let controlSensorPresent: Mavlink.SystemStatusSensor
     let controlSensorEnabled: Mavlink.SystemStatusSensor
     let controlSensorHealth: Mavlink.SystemStatusSensor
-    
+
     // -- Battery
-    let load: UInt16 // Maximum usage in percent of the mainloop time, (0%: 0, 100%: 1000) should be always below 1000
-    let voltageBattery: Voltage // Battery voltage, in millivolts (1 = 1 millivolt)
-    let currentBattery: Current // Battery current, in 10*milliamperes (1 = 10 milliampere), -1: autopilot does not measure the current
-    let batteryRemaining: Int8 // Remaining battery energy: (0%: 0, 100%: 100), -1: autopilot estimate the remaining battery
-    
+    // Maximum usage in percent of the mainloop time, (0%: 0, 100%: 1000) should be always below 1000
+    let load: UInt16
+    // Battery voltage, in millivolts (1 = 1 millivolt)
+    let voltageBattery: Voltage
+    // Battery current, in 10*milliamperes (1 = 10 milliampere), -1: autopilot does not measure the current
+    let currentBattery: Current
+    // Remaining battery energy: (0%: 0, 100%: 100), -1: autopilot estimate the remaining battery
+    let batteryRemaining: Int8
     // -- Communication
-    
     /// Communication drops in percent, (0%: 0, 100%: 10'000)
     let communicationDropRate: UInt16
     let communicationError: UInt16
-    
+
     // -- Error
     /// Autopilot-specific errors
     let errorCount1: UInt16
@@ -36,27 +38,27 @@ public struct SystemStatus {
 }
 
 extension SystemStatus: Message {
-    
+
     public static func messageId() -> UInt8 {
         return 1
     }
-    
+
     public static func systemId() -> UInt8 {
         return 0
     }
-    
+
     public static func componentId() -> UInt8 {
         return 0
     }
-    
+
     public static func messageLength() -> UInt8 {
         return 31
     }
-    
+
     public static func CRSsExtra() -> UInt8 {
         return 124
     }
-    
+
     public init(data: Data) throws {
         self.controlSensorPresent = try data.mavNumber(offset: 0)
         self.controlSensorEnabled = try data.mavNumber(offset: 4)
@@ -75,9 +77,9 @@ extension SystemStatus: Message {
 }
 
 extension SystemStatus: MavlinkEncodeMessage {
-    
+
     public func encode() -> [UInt8] {
-        
+
         var message = mavlink_message_t()
         mavlink_msg_sys_status_pack(SystemStatus.messageId(),
                                     SystemStatus.componentId(),
@@ -95,12 +97,12 @@ extension SystemStatus: MavlinkEncodeMessage {
                                     self.errorCount2,
                                     self.errorCount3,
                                     self.errorCount4)
-        
+
         let buffer = [UInt8](repeating:0, count: SystemStatus.length())
-        
+
         let pointer: UnsafeMutablePointer<UInt8> = UnsafeMutablePointer(buffer)
-        mavlink_msg_to_send_buffer(pointer, &message);
-        
+        mavlink_msg_to_send_buffer(pointer, &message)
+
         return buffer
     }
 }

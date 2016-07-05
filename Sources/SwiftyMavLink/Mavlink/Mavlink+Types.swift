@@ -4,7 +4,7 @@
 //  Copyright © 2016 edronic. All rights reserved.
 
 extension Mavlink {
-    
+
     /// Micro air vehicle / autopilot classes. This identifies the individual model.
     public enum Autopilot: UInt8 {
         case Generic
@@ -26,7 +26,7 @@ extension Mavlink {
         case Aerob
         case Asluav
     }
-    
+
     public enum MavType: UInt8 {
         case Generic
         case FixedWing
@@ -58,8 +58,9 @@ extension Mavlink {
         case Adsb
         case Unknown
     }
-    
-    ///These values define the type of firmware release. These values indicate the first version or release of this type.
+
+    ///These values define the type of firmware release. 
+    ///These values indicate the first version or release of this type.
     ///For example the first alpha release would be 64, the second would be 65.
     public enum Version: UInt8 {
         case Development = 0
@@ -69,11 +70,11 @@ extension Mavlink {
         case ReleaseCandidate = 192
         case Official = 255
     }
-    
+
     public struct ModeFlag: OptionSet {
         public let rawValue: UInt8
         public init(rawValue: UInt8) { self.rawValue = rawValue }
-        
+
         static let None = ModeFlag(rawValue: 0)
         static let CustomEnabled = ModeFlag(rawValue: 1)
         static let TestEnabled = ModeFlag(rawValue: 2)
@@ -84,7 +85,7 @@ extension Mavlink {
         static let ManualInputEnabled = ModeFlag(rawValue: 64)
         static let SafetyArmed = ModeFlag(rawValue: 128)
     }
-    
+
     public enum State: UInt8 {
         case Uninitialized
         case Boot
@@ -95,11 +96,11 @@ extension Mavlink {
         case Emergency
         case PowerOff
     }
-    
+
     public struct SystemStatusSensor: OptionSet {
         public let rawValue: UInt32
         public init(rawValue: UInt32) { self.rawValue = rawValue }
-        
+
         static let None = SystemStatusSensor(rawValue: 0)
         static let Gyro = SystemStatusSensor(rawValue: 1)
         static let Accelerometer = SystemStatusSensor(rawValue: 2)
@@ -125,7 +126,7 @@ extension Mavlink {
         static let AHRS = SystemStatusSensor(rawValue: 2097152)
         static let Terrain = SystemStatusSensor(rawValue: 4194304)
         static let ReverseMotor = SystemStatusSensor(rawValue: 8388608)
-        
+
         static let All: SystemStatusSensor = [.Gyro,
                                               .Accelerometer,
                                               .Magnetometer,
@@ -149,6 +150,5 @@ extension Mavlink {
                                               .Terrain,
                                               .ReverseMotor]
     }
-    
-}
 
+}

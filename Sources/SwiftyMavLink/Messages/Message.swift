@@ -15,7 +15,7 @@ public protocol Message: MavlinkEncodeMessage {
     static func componentId() -> UInt8
     static func messageLength() -> UInt8
     static func CRSsExtra() -> UInt8
-    
+
     init(data: Data) throws
 }
 

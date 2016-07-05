@@ -12,6 +12,7 @@ public struct Mavlink {
         SystemStatus.messageId(): SystemStatus.self,
         SystemTime.messageId(): SystemTime.self,
         Ping.messageId(): Ping.self,
-        RequestDataStream.messageId(): RequestDataStream.self
+        RequestDataStream.messageId(): RequestDataStream.self,
+        ChangeOperatorControl.messageId(): ChangeOperatorControl.self
     ]
 }

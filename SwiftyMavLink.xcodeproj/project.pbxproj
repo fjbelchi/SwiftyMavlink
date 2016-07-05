@@ -11,6 +11,7 @@
 		FF8B1FD81D189B8D00FA2FA6 /* Mavlink+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B1FD71D189B8D00FA2FA6 /* Mavlink+Types.swift */; };
 		FF8B1FD91D189BDA00FA2FA6 /* Mavlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B1FD51D189B5000FA2FA6 /* Mavlink.swift */; };
 		FF8B1FDB1D189EC800FA2FA6 /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B1FDA1D189EC800FA2FA6 /* UInt32+Extension.swift */; };
+		FF9558741D2B9A32001400E0 /* ChangeOperatorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9558731D2B9A32001400E0 /* ChangeOperatorControl.swift */; };
 		FFB346A51D141028009715BF /* Data+Mavlink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3469B1D13F0C1009715BF /* Data+Mavlink.swift */; };
 		FFB346A61D14102D009715BF /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346A11D13F810009715BF /* Checksum.swift */; };
 		FFB346A71D141031009715BF /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB346A31D13F870009715BF /* Package.swift */; };
@@ -99,6 +100,7 @@
 		FF8B1FD51D189B5000FA2FA6 /* Mavlink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mavlink.swift; path = Mavlink/Mavlink.swift; sourceTree = "<group>"; };
 		FF8B1FD71D189B8D00FA2FA6 /* Mavlink+Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Mavlink+Types.swift"; path = "Mavlink/Mavlink+Types.swift"; sourceTree = "<group>"; };
 		FF8B1FDA1D189EC800FA2FA6 /* UInt32+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Extensions/UInt32+Extension.swift"; sourceTree = "<group>"; };
+		FF9558731D2B9A32001400E0 /* ChangeOperatorControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeOperatorControl.swift; path = Messages/ChangeOperatorControl.swift; sourceTree = "<group>"; };
 		FFB346971D13EEBC009715BF /* MavlinkParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MavlinkParser.swift; path = MavlinkParser/MavlinkParser.swift; sourceTree = "<group>"; };
 		FFB3469B1D13F0C1009715BF /* Data+Mavlink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+Mavlink.swift"; path = "Extensions/Data+Mavlink.swift"; sourceTree = "<group>"; };
 		FFB3469F1D13F1F9009715BF /* MavlinkParserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MavlinkParserError.swift; path = MavlinkParser/MavlinkParserError.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				FF7771211D19A509008ACCC2 /* SystemStatus.swift */,
 				FFD424CD1D251CBA00EEC5F6 /* SystemTime.swift */,
 				FFD424D01D25364B00EEC5F6 /* Ping.swift */,
+				FF9558731D2B9A32001400E0 /* ChangeOperatorControl.swift */,
 				FFD424D21D253E5000EEC5F6 /* RequestDataStream.swift */,
 			);
 			name = Messages;
@@ -841,6 +844,7 @@
 				FFB346A91D141040009715BF /* MavlinkParser.swift in Sources */,
 				__src_cc_ref_Sources/SwiftyMavLink/Mavlink.swift /* MyDelegate.swift in Sources */,
 				FFB346A61D14102D009715BF /* Checksum.swift in Sources */,
+				FF9558741D2B9A32001400E0 /* ChangeOperatorControl.swift in Sources */,
 				FFD424CF1D251FDE00EEC5F6 /* SystemTime.swift in Sources */,
 				__src_cc_ref_Sources/SwiftyMavLink/Messages/Heartbeat.swift /* Heartbeat.swift in Sources */,
 				__src_cc_ref_Sources/SwiftyMavLink/Messages/Message.swift /* Message.swift in Sources */,
