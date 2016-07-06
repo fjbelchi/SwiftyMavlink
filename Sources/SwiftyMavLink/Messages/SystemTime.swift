@@ -15,7 +15,7 @@ public struct SystemTime {
 
     public init() {
         self.timestamp = Date()
-        self.bootTime = Date(timeIntervalSinceReferenceDate: ProcessInfo.processInfo().systemUptime)
+        self.bootTime = Date(timeIntervalSinceReferenceDate: ProcessInfo.processInfo.systemUptime)
     }
 }
 
@@ -54,7 +54,7 @@ extension SystemTime: MavlinkEncodeMessage {
     public func encode() -> [UInt8] {
 
         let unixTimestamp = UInt64(self.timestamp.timeIntervalSince1970)
-        let bootTimestamp = UInt32(ProcessInfo.processInfo().systemUptime*1000)
+        let bootTimestamp = UInt32(ProcessInfo.processInfo.systemUptime*1000)
 
         var message = mavlink_message_t()
         mavlink_msg_system_time_pack(SystemStatus.messageId(),

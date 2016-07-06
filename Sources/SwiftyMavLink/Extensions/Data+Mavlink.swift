@@ -16,7 +16,7 @@ public extension Data {
      - Returns: `T`
      */
     func mavNumber<T>(offset: Int) throws -> T {
-        let size = strideof(T)
+        let size = strideof(T.self)
         guard offset + size <= count else {
             throw MavlinkParserError.NumberSizeOutOfBounds(offset: offset, size: size)
         }
@@ -50,7 +50,7 @@ public extension Data {
         var array: [T] = [T]()
         for _ in 0..<count {
             array.append(try mavNumber(offset: offset))
-            offset += strideof(T)
+            offset += strideof(T.self)
         }
         return array
     }

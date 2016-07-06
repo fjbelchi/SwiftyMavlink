@@ -16,7 +16,7 @@ public struct Ping {
     let targetComponent: UInt8
 
     public init(pingSequence: UInt32, targetSystem: UInt8, targetComponent: UInt8) {
-        self.timestamp = Date(timeIntervalSinceReferenceDate: ProcessInfo.processInfo().systemUptime)
+        self.timestamp = Date(timeIntervalSinceReferenceDate: ProcessInfo.processInfo.systemUptime)
         self.pingSequence = pingSequence
         self.targetSystem = targetSystem
         self.targetComponent = targetComponent
@@ -58,7 +58,7 @@ extension Ping: MavlinkEncodeMessage {
 
     public func encode() -> [UInt8] {
 
-        let timestamp = UInt64(ProcessInfo.processInfo().systemUptime)
+        let timestamp = UInt64(ProcessInfo.processInfo.systemUptime)
 
         var message = mavlink_message_t()
         mavlink_msg_ping_pack(SystemStatus.messageId(),
